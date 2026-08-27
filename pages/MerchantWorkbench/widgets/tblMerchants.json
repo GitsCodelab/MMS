@@ -162,7 +162,7 @@
       "notation": "standard",
       "originalId": "BRANCH_CODE",
       "sticky": "",
-      "textColor": "",
+      "textColor": "#FF6347",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
