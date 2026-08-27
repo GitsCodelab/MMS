@@ -133,6 +133,7 @@
   "needsErrorInfo": false,
   "parentId": "0",
   "parentRowSpace": 10,
+  "primaryColumnId": "REQUEST_ID",
   "primaryColumns": {
     "BRANCH_CODE": {
       "alias": "BRANCH_CODE",
