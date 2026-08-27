@@ -1,0 +1,34 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "isVisible": false,
+  "leftColumn": 2,
+  "parentId": "0",
+  "renderMode": "CANVAS",
+  "rightColumn": 94,
+  "topRow": 19,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "cntMerchant",
+  "widgetName": "cntMerchant",
+  "children": [
+    {
+      "text": "Merchant ID: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].MERCHANT_ID || '' }}\nCIF: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].CIF || '' }}\nBranch Name: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].BRANCH_NAME || '' }}\nRM Name: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].RM_NAME || '' }}",
+      "fontSize": "0.9rem",
+      "fontStyle": "",
+      "textStyle": "BODY",
+      "isVisible": true,
+      "leftColumn": 1,
+      "rightColumn": 30,
+      "topRow": 1,
+      "bottomRow": 5,
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "txtMerchantBlock",
+      "widgetName": "txtMerchantBlock",
+      "parentId": "cntMerchant",
+      "renderMode": "CANVAS"
+    }
+  ]
+}

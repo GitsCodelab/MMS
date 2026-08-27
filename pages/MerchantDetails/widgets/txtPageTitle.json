@@ -1,0 +1,17 @@
+{
+  "isVisible": true,
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
+  "text": "Merchant Details",
+  "textStyle": "HEADING",
+  "leftColumn": 2,
+  "rightColumn": 22,
+  "topRow": 1,
+  "bottomRow": 5,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtPageTitle",
+  "widgetName": "txtPageTitle",
+  "parentId": "0",
+  "renderMode": "CANVAS"
+}

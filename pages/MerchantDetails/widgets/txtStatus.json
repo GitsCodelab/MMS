@@ -1,0 +1,17 @@
+{
+  "isVisible": true,
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "text": "Status: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].STATUS || '' }}",
+  "textStyle": "BODY",
+  "leftColumn": 78,
+  "rightColumn": 92,
+  "topRow": 7,
+  "bottomRow": 10,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtStatus",
+  "widgetName": "txtStatus",
+  "parentId": "0",
+  "renderMode": "CANVAS"
+}

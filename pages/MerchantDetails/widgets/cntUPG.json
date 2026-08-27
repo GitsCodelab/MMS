@@ -1,0 +1,34 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "isVisible": false,
+  "leftColumn": 2,
+  "parentId": "0",
+  "renderMode": "CANVAS",
+  "rightColumn": 94,
+  "topRow": 19,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "cntUPG",
+  "widgetName": "cntUPG",
+  "children": [
+    {
+      "text": "UPG registrations are shown in the dedicated table below. HASH_KEY is excluded by query design.",
+      "fontSize": "0.9rem",
+      "fontStyle": "",
+      "textStyle": "BODY",
+      "isVisible": true,
+      "leftColumn": 1,
+      "rightColumn": 30,
+      "topRow": 1,
+      "bottomRow": 5,
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "txtUPGBlock",
+      "widgetName": "txtUPGBlock",
+      "parentId": "cntUPG",
+      "renderMode": "CANVAS"
+    }
+  ]
+}

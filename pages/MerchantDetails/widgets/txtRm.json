@@ -1,0 +1,17 @@
+{
+  "isVisible": true,
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "text": "RM: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].RM_NAME || '' }}",
+  "textStyle": "BODY",
+  "leftColumn": 62,
+  "rightColumn": 78,
+  "topRow": 7,
+  "bottomRow": 10,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtRm",
+  "widgetName": "txtRm",
+  "parentId": "0",
+  "renderMode": "CANVAS"
+}

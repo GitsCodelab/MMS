@@ -1,0 +1,34 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "isVisible": true,
+  "leftColumn": 2,
+  "parentId": "0",
+  "renderMode": "CANVAS",
+  "rightColumn": 94,
+  "topRow": 19,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "cntRequest",
+  "widgetName": "cntRequest",
+  "children": [
+    {
+      "text": "Request ID: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].REQUEST_ID || '' }}\nContract Serial: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].CONTRACT_SERIAL || '' }}\nRequest Date: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].REQUEST_DATE || '' }}\nStatus: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].STATUS || '' }}",
+      "fontSize": "0.9rem",
+      "fontStyle": "",
+      "textStyle": "BODY",
+      "isVisible": true,
+      "leftColumn": 1,
+      "rightColumn": 30,
+      "topRow": 1,
+      "bottomRow": 5,
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "txtRequestBlock",
+      "widgetName": "txtRequestBlock",
+      "parentId": "cntRequest",
+      "renderMode": "CANVAS"
+    }
+  ]
+}

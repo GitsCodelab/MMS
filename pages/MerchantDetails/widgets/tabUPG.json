@@ -1,0 +1,33 @@
+{
+  "backgroundColor": "#F1F5F9",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "isVisible": true,
+  "leftColumn": 50,
+  "parentId": "0",
+  "renderMode": "CANVAS",
+  "rightColumn": 66,
+  "topRow": 11,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "tabUPG",
+  "widgetName": "tabUPG",
+  "children": [
+    {
+      "text": "UPG",
+      "fontSize": "0.9rem",
+      "fontStyle": "BOLD",
+      "isVisible": true,
+      "leftColumn": 1,
+      "rightColumn": 12,
+      "topRow": 1,
+      "bottomRow": 3,
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "tabUPGLabel",
+      "widgetName": "tabUPGLabel",
+      "parentId": "tabUPG",
+      "renderMode": "CANVAS"
+    }
+  ]
+}

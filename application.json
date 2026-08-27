@@ -32,6 +32,10 @@
     {
       "id": "MerchantWorkbench",
       "isDefault": true
+    },
+    {
+      "id": "MerchantDetails",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

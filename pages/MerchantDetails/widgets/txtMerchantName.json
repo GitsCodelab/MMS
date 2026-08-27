@@ -1,0 +1,17 @@
+{
+  "isVisible": true,
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "text": "Merchant Name: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].MERCHANT_NAME_EN || '' }}",
+  "textStyle": "BODY",
+  "leftColumn": 18,
+  "rightColumn": 34,
+  "topRow": 7,
+  "bottomRow": 10,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtMerchantName",
+  "widgetName": "txtMerchantName",
+  "parentId": "0",
+  "renderMode": "CANVAS"
+}

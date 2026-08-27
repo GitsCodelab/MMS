@@ -1,0 +1,33 @@
+{
+  "backgroundColor": "#F8FAFC",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "isVisible": true,
+  "leftColumn": 2,
+  "parentId": "0",
+  "renderMode": "CANVAS",
+  "rightColumn": 18,
+  "topRow": 11,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "tabRequest",
+  "widgetName": "tabRequest",
+  "children": [
+    {
+      "text": "Request",
+      "fontSize": "0.9rem",
+      "fontStyle": "BOLD",
+      "isVisible": true,
+      "leftColumn": 1,
+      "rightColumn": 12,
+      "topRow": 1,
+      "bottomRow": 3,
+      "type": "TEXT_WIDGET",
+      "version": 1,
+      "widgetId": "tabRequestLabel",
+      "widgetName": "tabRequestLabel",
+      "parentId": "tabRequest",
+      "renderMode": "CANVAS"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "isVisible": true,
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "text": "Merchant ID: {{appsmith.URL.queryParams.MERCHANT_ID}}",
+  "textStyle": "BODY",
+  "leftColumn": 2,
+  "rightColumn": 18,
+  "topRow": 7,
+  "bottomRow": 10,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtMerchantId",
+  "widgetName": "txtMerchantId",
+  "parentId": "0",
+  "renderMode": "CANVAS"
+}
