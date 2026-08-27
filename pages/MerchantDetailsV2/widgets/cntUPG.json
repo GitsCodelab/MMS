@@ -1,0 +1,1 @@
+{"backgroundColor":"#FFFFFF","borderRadius":"{{appsmith.theme.borderRadius.appBorderRadius}}","bottomRow":128,"dynamicBindingPathList":[{"key":"isVisible"}],"isVisible":"{{ appsmith.URL.queryParams.tab === 'upg' }}","leftColumn":2,"parentId":"0","renderMode":"CANVAS","rightColumn":94,"topRow":103,"type":"CONTAINER_WIDGET","version":1,"widgetId":"cntUPG","widgetName":"cntUPG"}
