@@ -131,6 +131,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "onRowSelected": "{{ navigateTo('MerchantDetails', { REQUEST_ID: tblMerchants.selectedRow.REQUEST_ID, MERCHANT_ID: tblMerchants.selectedRow.MERCHANT_ID }, 'SAME_WINDOW'); }}",
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
