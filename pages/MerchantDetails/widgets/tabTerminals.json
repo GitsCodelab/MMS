@@ -1,33 +1,18 @@
 {
-  "backgroundColor": "#F1F5F9",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "isVisible": true,
+  "isDefaultClickDisabled": true,
   "leftColumn": 34,
   "parentId": "0",
   "renderMode": "CANVAS",
   "rightColumn": 50,
   "topRow": 11,
-  "type": "CONTAINER_WIDGET",
+  "onClick": "{{ navigateTo('MerchantDetails', { REQUEST_ID: appsmith.URL.queryParams.REQUEST_ID, MERCHANT_ID: appsmith.URL.queryParams.MERCHANT_ID, tab: 'terminals' }, 'SAME_WINDOW'); }}",
+  "text": "Terminals",
+  "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "tabTerminals",
-  "widgetName": "tabTerminals",
-  "children": [
-    {
-      "text": "Terminals",
-      "fontSize": "0.9rem",
-      "fontStyle": "BOLD",
-      "isVisible": true,
-      "leftColumn": 1,
-      "rightColumn": 12,
-      "topRow": 1,
-      "bottomRow": 3,
-      "type": "TEXT_WIDGET",
-      "version": 1,
-      "widgetId": "tabTerminalsLabel",
-      "widgetName": "tabTerminalsLabel",
-      "parentId": "tabTerminals",
-      "renderMode": "CANVAS"
-    }
-  ]
+  "widgetName": "tabTerminals"
 }

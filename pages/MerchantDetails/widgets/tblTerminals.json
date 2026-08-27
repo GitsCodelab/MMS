@@ -4,7 +4,7 @@
   "borderColor": "#D6D6D6",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 72,
+  "bottomRow": 101,
   "boxShadow": "none",
   "columnOrder": [
     "TERMINAL_KIND",
@@ -20,7 +20,7 @@
   ],
   "defaultPageSize": 0,
   "enableClientSideSearch": false,
-  "isVisible": true,
+  "isVisible": "{{ appsmith.URL.queryParams.tab === 'terminals' }}",
   "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
@@ -30,10 +30,11 @@
   "renderMode": "CANVAS",
   "rightColumn": 94,
   "tableData": "{{ QRY_MMS_MERCHANT_DETAILS_TERMINALS.data }}",
-  "topRow": 47,
-  "type": "TABLE_WIDGET",
-  "version": 1,
+  "topRow": 78,
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
   "widgetId": "tblTerminals",
   "widgetName": "tblTerminals",
-  "dynamicBindingPathList": [{ "key": "tableData" }]
+  "dynamicBindingPathList": [{ "key": "tableData" }, { "key": "isVisible" }],
+  "dynamicPropertyPathList": [{ "key": "tableData" }, { "key": "isVisible" }]
 }

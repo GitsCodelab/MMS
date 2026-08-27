@@ -4,7 +4,7 @@
   "borderColor": "#D6D6D6",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 72,
+  "bottomRow": 127,
   "boxShadow": "none",
   "columnOrder": [
     "TERMINAL_ID",
@@ -16,7 +16,7 @@
   ],
   "defaultPageSize": 0,
   "enableClientSideSearch": false,
-  "isVisible": true,
+  "isVisible": "{{ appsmith.URL.queryParams.tab === 'upg' }}",
   "isVisibleDownload": true,
   "isVisibleFilters": true,
   "isVisiblePagination": true,
@@ -26,10 +26,11 @@
   "renderMode": "CANVAS",
   "rightColumn": 94,
   "tableData": "{{ QRY_MMS_MERCHANT_DETAILS_UPG.data }}",
-  "topRow": 47,
-  "type": "TABLE_WIDGET",
-  "version": 1,
+  "topRow": 103,
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
   "widgetId": "tblUPGRegistrations",
   "widgetName": "tblUPGRegistrations",
-  "dynamicBindingPathList": [{ "key": "tableData" }]
+  "dynamicBindingPathList": [{ "key": "tableData" }, { "key": "isVisible" }],
+  "dynamicPropertyPathList": [{ "key": "tableData" }, { "key": "isVisible" }]
 }
