@@ -27,11 +27,20 @@
     "dynamicBindingPathList": [
       {
         "key": "actionConfiguration.formData.body.data"
+      },
+      {
+        "key": "onSuccess"
+      }
+    ],
+    "dynamicTriggerPathList": [
+      {
+        "key": "onSuccess"
       }
     ],
     "name": "QRY_MMS_MERCHANT_DETAILS_TERMINALS",
+    "onSuccess": "{{ QRY_MMS_MERCHANT_DETAILS_UPG.run(); }}",
     "pageId": "MerchantDetails",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
