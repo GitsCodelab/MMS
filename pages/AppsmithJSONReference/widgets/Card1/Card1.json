@@ -1,0 +1,164 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 142,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "cardData": {},
+  "childStylesheet": {
+    "footerAction": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 70,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "chob7lwp2x",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 300,
+      "minWidth": 450,
+      "mobileBottomRow": 300,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 229.875,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "qyjk4nxun7",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 229.875,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "amu1h9l1an",
+      "widgetName": "Canvas2"
+    }
+  ],
+  "defaultExpanded": true,
+  "defaultSelected": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "selectedAccentColor"
+    },
+    {
+      "key": "footerActions.footerAction1.buttonColor"
+    },
+    {
+      "key": "footerActions.footerAction2.buttonColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "expandCollapseEnabled": false,
+  "flexVerticalAlignment": "stretch",
+  "footerActions": {
+    "footerAction1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonVariant": "SECONDARY",
+      "id": "footerAction1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action 1",
+      "widgetId": ""
+    },
+    "footerAction2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonVariant": "PRIMARY",
+      "id": "footerAction2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action 2",
+      "widgetId": ""
+    }
+  },
+  "hoverElevation": false,
+  "isCanvas": true,
+  "isClickable": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zihta8o7fn",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "mediaHeight": 140,
+  "mediaObjectFit": "cover",
+  "mediaPosition": "NONE",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "First menu item",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Second menu item",
+      "widgetId": ""
+    }
+  },
+  "minDynamicHeight": 15,
+  "minWidth": 450,
+  "mobileBottomRow": 155,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 125,
+  "needsErrorInfo": false,
+  "originalBottomRow": 142,
+  "originalTopRow": 125,
+  "parentColumnSpace": 9.578125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "positioning": "fixed",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 57,
+  "selectedAccentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "selectionEnabled": false,
+  "shouldScrollContents": true,
+  "showFooter": true,
+  "showFooterDivider": true,
+  "showHeader": true,
+  "showHeaderDivider": true,
+  "showMenu": true,
+  "subtitle": "Card subtitle",
+  "title": "Card title",
+  "topRow": 125,
+  "type": "CARD_WIDGET",
+  "version": 1,
+  "widgetId": "qyjk4nxun7",
+  "widgetName": "Card1"
+}

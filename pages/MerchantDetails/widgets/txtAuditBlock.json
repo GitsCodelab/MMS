@@ -1,0 +1,17 @@
+{
+  "bottomRow": 5,
+  "fontSize": "0.9rem",
+  "fontStyle": "",
+  "isVisible": true,
+  "leftColumn": 1,
+  "parentId": "cntAudit",
+  "renderMode": "CANVAS",
+  "rightColumn": 30,
+  "text": "Audit / Trace placeholder. This page is read-only and audit source is deferred until the approved schema is confirmed.",
+  "textStyle": "BODY",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtAuditBlock",
+  "widgetName": "txtAuditBlock"
+}

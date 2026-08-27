@@ -29,10 +29,9 @@
         "key": "actionConfiguration.formData.body.data"
       }
     ],
-    "dynamicTriggerPathList": [],
     "name": "QRY_MMS_MERCHANT_DETAILS_UPG",
     "pageId": "MerchantDetails",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

@@ -32,15 +32,9 @@
         "key": "onSuccess"
       }
     ],
-    "dynamicTriggerPathList": [
-      {
-        "key": "onSuccess"
-      }
-    ],
     "name": "QRY_MMS_MERCHANT_DETAILS_TERMINALS",
-    "onSuccess": "{{ QRY_MMS_MERCHANT_DETAILS_UPG.run(); }}",
     "pageId": "MerchantDetails",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

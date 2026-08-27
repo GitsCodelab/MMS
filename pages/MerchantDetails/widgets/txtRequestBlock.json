@@ -1,0 +1,27 @@
+{
+  "bottomRow": 22,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "fontSize": "0.9rem",
+  "fontStyle": "",
+  "isVisible": true,
+  "leftColumn": 1,
+  "parentId": "cntRequest",
+  "renderMode": "CANVAS",
+  "rightColumn": 30,
+  "text": "Request ID: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].REQUEST_ID || '' }}\nContract Serial: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].CONTRACT_SERIAL || '' }}\nRequest Date: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].REQUEST_DATE || '' }}\nPrevious Request Date: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].PREVIOUS_REQUEST_DATE || '' }}\nReceived At: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].RECEIVED_AT || '' }}\nStatus: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].STATUS || '' }}\nCurrent Stage: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].CURRENT_STAGE || '' }}\n\nMaker ID: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].MAKER_ID || '' }}\nMaker Action: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].MAKER_ACTION || '' }}\nMaker At: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].MAKER_AT || '' }}\n\nFraud ID: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].FRAUD_ID || '' }}\nFraud Action: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].FRAUD_ACTION || '' }}\nFraud At: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].FRAUD_AT || '' }}\n\nChecker ID: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].CHECKER_ID || '' }}\nChecker Action: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].CHECKER_ACTION || '' }}\nChecker At: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].CHECKER_AT || '' }}\n\nReject Reason Code: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].REJECT_REASON_CODE || '' }}\nReject Reason Description: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].REJECT_REASON_DESC || '' }}\nBank Pushback Note: {{ QRY_MMS_MERCHANT_DETAILS_REQUEST.data[0].BANK_PUSHBACK_NOTE || '' }}",
+  "textStyle": "BODY",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtRequestBlock",
+  "widgetName": "txtRequestBlock"
+}

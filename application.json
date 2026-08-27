@@ -36,6 +36,14 @@
     {
       "id": "MerchantDetails",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "AppsmithJSONReference",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

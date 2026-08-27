@@ -2,8 +2,12 @@
   "backgroundColor": "#FFFFFF",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 143,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "isVisible": "{{ appsmith.URL.queryParams.tab === 'audit' }}",
-  "dynamicBindingPathList": [{ "key": "isVisible" }],
   "leftColumn": 2,
   "parentId": "0",
   "renderMode": "CANVAS",
@@ -12,24 +16,5 @@
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "cntAudit",
-  "widgetName": "cntAudit",
-  "children": [
-    {
-      "text": "Audit / Trace placeholder. This page is read-only and audit source is deferred until the approved schema is confirmed.",
-      "fontSize": "0.9rem",
-      "fontStyle": "",
-      "textStyle": "BODY",
-      "isVisible": true,
-      "leftColumn": 1,
-      "rightColumn": 30,
-      "topRow": 1,
-      "bottomRow": 5,
-      "type": "TEXT_WIDGET",
-      "version": 1,
-      "widgetId": "txtAuditBlock",
-      "widgetName": "txtAuditBlock",
-      "parentId": "cntAudit",
-      "renderMode": "CANVAS"
-    }
-  ]
+  "widgetName": "cntAudit"
 }

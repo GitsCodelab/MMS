@@ -1,0 +1,17 @@
+{
+  "bottomRow": 5,
+  "fontSize": "0.9rem",
+  "fontStyle": "",
+  "isVisible": true,
+  "leftColumn": 1,
+  "parentId": "cntUPG",
+  "renderMode": "CANVAS",
+  "rightColumn": 30,
+  "text": "UPG registrations are shown in the dedicated table below. HASH_KEY is excluded by query design.",
+  "textStyle": "BODY",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "txtUPGBlock",
+  "widgetName": "txtUPGBlock"
+}
