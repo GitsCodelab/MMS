@@ -27,9 +27,6 @@
     "dynamicBindingPathList": [
       {
         "key": "actionConfiguration.formData.body.data"
-      },
-      {
-        "key": "onSuccess"
       }
     ],
     "name": "QRY_MMS_MERCHANT_DETAILS_MERCHANT",

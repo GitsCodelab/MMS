@@ -5,11 +5,6 @@
       "key": "text"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "text"
-    }
-  ],
   "fontSize": "0.9rem",
   "fontStyle": "",
   "isVisible": true,

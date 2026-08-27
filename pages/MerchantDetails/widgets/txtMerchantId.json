@@ -1,7 +1,6 @@
 {
   "isVisible": true,
   "dynamicBindingPathList": [{ "key": "text" }],
-  "dynamicPropertyPathList": [{ "key": "text" }],
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "text": "Merchant ID: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].MERCHANT_ID || appsmith.URL.queryParams.MERCHANT_ID || '59F2A096E5047D26E063C642320AB95B' }}",

@@ -1,7 +1,6 @@
 {
   "isVisible": true,
   "dynamicBindingPathList": [{ "key": "text" }],
-  "dynamicPropertyPathList": [{ "key": "text" }],
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "text": "Branch: {{ QRY_MMS_MERCHANT_DETAILS_MERCHANT.data[0].BRANCH_NAME || '' }}",
