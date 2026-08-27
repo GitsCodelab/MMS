@@ -24,7 +24,11 @@
       "name": "MMS-LOCAL",
       "pluginId": "oracle-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "actionConfiguration.formData.body.data"
+      }
+    ],
     "name": "QRY_MMS_MERCHANT_DETAILS_UPG",
     "pageId": "MerchantDetails",
     "runBehaviour": "ON_PAGE_LOAD",
