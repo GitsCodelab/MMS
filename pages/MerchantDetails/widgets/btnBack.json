@@ -4,6 +4,13 @@
   "bottomRow": 5,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    { "key": "buttonColor" },
+    { "key": "borderRadius" }
+  ],
+  "dynamicTriggerPathList": [
+    { "key": "onClick" }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,

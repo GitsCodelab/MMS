@@ -2,6 +2,13 @@
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
+  "dynamicBindingPathList": [
+    { "key": "buttonColor" },
+    { "key": "borderRadius" }
+  ],
+  "dynamicTriggerPathList": [
+    { "key": "onClick" }
+  ],
   "isVisible": true,
   "isDefaultClickDisabled": true,
   "leftColumn": 50,

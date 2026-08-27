@@ -4,7 +4,6 @@
   "bottomRow": 76,
   "isVisible": "{{ appsmith.URL.queryParams.tab === 'merchant' }}",
   "dynamicBindingPathList": [{ "key": "isVisible" }],
-  "dynamicPropertyPathList": [{ "key": "isVisible" }],
   "leftColumn": 2,
   "parentId": "0",
   "renderMode": "CANVAS",

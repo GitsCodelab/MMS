@@ -4,7 +4,6 @@
   "bottomRow": 135,
   "isVisible": "{{ appsmith.URL.queryParams.tab === 'upg' }}",
   "dynamicBindingPathList": [{ "key": "isVisible" }],
-  "dynamicPropertyPathList": [{ "key": "isVisible" }],
   "leftColumn": 2,
   "parentId": "0",
   "renderMode": "CANVAS",

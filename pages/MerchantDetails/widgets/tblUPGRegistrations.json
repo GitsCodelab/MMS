@@ -32,5 +32,5 @@
   "widgetId": "tblUPGRegistrations",
   "widgetName": "tblUPGRegistrations",
   "dynamicBindingPathList": [{ "key": "tableData" }, { "key": "isVisible" }],
-  "dynamicPropertyPathList": [{ "key": "tableData" }, { "key": "isVisible" }]
+  "dynamicPropertyPathList": [{ "key": "tableData" }]
 }

@@ -36,5 +36,5 @@
   "widgetId": "tblTerminals",
   "widgetName": "tblTerminals",
   "dynamicBindingPathList": [{ "key": "tableData" }, { "key": "isVisible" }],
-  "dynamicPropertyPathList": [{ "key": "tableData" }, { "key": "isVisible" }]
+  "dynamicPropertyPathList": [{ "key": "tableData" }]
 }
