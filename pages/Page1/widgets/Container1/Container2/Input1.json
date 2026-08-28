@@ -1,5 +1,5 @@
 {
-  "accentColor": "#fff",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
