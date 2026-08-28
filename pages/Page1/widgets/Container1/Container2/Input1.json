@@ -6,7 +6,7 @@
   "bottomRow": 7,
   "boxShadow": "none",
   "defaultText": "{{QRY_MMS_MERCHANT_DETAILS_MERCH.data[0][\"CIF\"]}}",
-  "BackgroundColor": "#FFFFFF",
+  "BackgroundColor": "#FFFFFF!important",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
