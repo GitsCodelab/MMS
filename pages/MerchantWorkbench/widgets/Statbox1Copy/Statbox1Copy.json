@@ -1,0 +1,89 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "white",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 20,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 140,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "0ovo4i2v2o",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 140,
+      "minWidth": 450,
+      "mobileBottomRow": 140,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 243,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "mzjs7mgmaf",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 243,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "tidjk4wifx",
+      "widgetName": "Canvas1Copy"
+    }
+  ],
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "flexVerticalAlignment": "stretch",
+  "isCanvas": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "97h62r0b4m",
+  "leftColumn": 14,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "originalBottomRow": 20,
+  "originalTopRow": 6,
+  "parentColumnSpace": 20.25,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "positioning": "fixed",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "shouldScrollContents": true,
+  "topRow": 6,
+  "type": "STATBOX_WIDGET",
+  "widgetId": "mzjs7mgmaf",
+  "widgetName": "Statbox1Copy"
+}
