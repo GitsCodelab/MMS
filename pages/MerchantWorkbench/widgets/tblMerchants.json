@@ -137,7 +137,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onRowSelected": "{{navigateTo('Page1', {\n  REQUEST_ID: tblMerchants.selectedRow.REQUEST_ID,\n  MERCHANT_ID: tblMerchants.selectedRow.MERCHANT_ID\n}, 'SAME_WINDOW');}}",
+  "onRowSelected": "{{navigateTo('MerchantDetails', {\n  REQUEST_ID: tblMerchants.selectedRow.REQUEST_ID,\n  MERCHANT_ID: tblMerchants.selectedRow.MERCHANT_ID\n}, 'SAME_WINDOW');}}",
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumnId": "REQUEST_ID",
