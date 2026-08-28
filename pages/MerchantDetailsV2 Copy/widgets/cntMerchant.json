@@ -1,24 +1,24 @@
 {
   "backgroundColor": "#FFFFFF",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 184,
-  "bottomRowBeforeCollapse": 152,
+  "bottomRow": 159,
+  "bottomRowBeforeCollapse": 76,
   "dynamicBindingPathList": [
     {
       "key": "isVisible"
     }
   ],
-  "isVisible": "{{ appsmith.URL.queryParams.tab === 'terminals' }}",
+  "isVisible": "{{ appsmith.URL.queryParams.tab === 'merchant' }}",
   "leftColumn": 2,
-  "originalBottomRow": 152,
-  "originalTopRow": 127,
+  "originalBottomRow": 76,
+  "originalTopRow": 44,
   "parentId": "0",
   "renderMode": "CANVAS",
   "rightColumn": 94,
-  "topRow": 159,
-  "topRowBeforeCollapse": 127,
+  "topRow": 127,
+  "topRowBeforeCollapse": 44,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "cntTerminals",
-  "widgetName": "cntTerminals"
+  "widgetId": "pvlhwu2hl2",
+  "widgetName": "cntMerchant"
 }

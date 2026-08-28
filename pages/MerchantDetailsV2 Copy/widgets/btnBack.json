@@ -1,0 +1,37 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 44,
+  "onClick": "{{ navigateTo('MerchantWorkbench', {}, 'SAME_WINDOW'); }}",
+  "parentColumnSpace": 10,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 52,
+  "text": "Back",
+  "topRow": 1,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "79zkwzkyuj",
+  "widgetName": "btnBack"
+}

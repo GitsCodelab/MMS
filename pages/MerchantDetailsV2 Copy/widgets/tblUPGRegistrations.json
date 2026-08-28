@@ -20,7 +20,7 @@
     "CREATED_AT",
     "UPDATED_AT"
   ],
-  "columnUpdatedAt": 1787874424547,
+  "columnUpdatedAt": 1787874372252,
   "columnWidthMap": {},
   "compactMode": "SHORT",
   "customIsLoading": false,
@@ -101,7 +101,7 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "parentColumnSpace": 10,
-  "parentId": "cntUPG",
+  "parentId": "kmhnlq3wsd",
   "parentRowSpace": 10,
   "primaryColumnId": "TERMINAL_ID",
   "primaryColumns": {
@@ -458,6 +458,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "TOP",
-  "widgetId": "tblUPGRegistrations",
+  "widgetId": "h4sxhurjqi",
   "widgetName": "tblUPGRegistrations"
 }

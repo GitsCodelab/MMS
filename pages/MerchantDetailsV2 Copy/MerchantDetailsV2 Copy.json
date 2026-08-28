@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "6a8c2e45ad890f2fc697683b_merchant-details-v2-page",
+  "gitSyncId": "6a90be9b196072f7c5154f6a_70a49e3d-a3f3-4b4d-b452-4fc0c3ff6746",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "MerchantDetailsV2",
-    "slug": "merchantdetailsv2"
+    "name": "MerchantDetailsV2 Copy",
+    "slug": "merchantdetailsv2-copy"
   }
 }

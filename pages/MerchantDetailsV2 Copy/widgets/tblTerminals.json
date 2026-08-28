@@ -41,7 +41,7 @@
     "CREATED_BY",
     "UPDATED_BY"
   ],
-  "columnUpdatedAt": 1787874423562,
+  "columnUpdatedAt": 1787874371150,
   "columnWidthMap": {},
   "compactMode": "SHORT",
   "customIsLoading": false,
@@ -185,7 +185,7 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "parentColumnSpace": 10,
-  "parentId": "cntTerminals",
+  "parentId": "scxrb24caw",
   "parentRowSpace": 10,
   "primaryColumnId": "TERMINAL_ID",
   "primaryColumns": {
@@ -1256,6 +1256,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "TOP",
-  "widgetId": "tblTerminals",
+  "widgetId": "nudn7wsfwr",
   "widgetName": "tblTerminals"
 }

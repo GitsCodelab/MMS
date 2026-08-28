@@ -4,7 +4,7 @@
   "borderColor": "#D6D6D6",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 101,
+  "bottomRow": 47,
   "boxShadow": "none",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -53,9 +53,6 @@
   ],
   "delimiter": ",",
   "dynamicBindingPathList": [
-    {
-      "key": "tableData"
-    },
     {
       "key": "accentColor"
     },
@@ -154,6 +151,9 @@
     },
     {
       "key": "primaryColumns.UPDATED_BY.computedValue"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
@@ -177,15 +177,17 @@
   "isVisibleSearch": true,
   "key": "tblterminals",
   "label": "Data",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "minWidth": 450,
   "mobileBottomRow": 101,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 34,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "originalBottomRow": 47,
+  "originalTopRow": 14,
   "parentColumnSpace": 10,
-  "parentId": "cntTerminals",
+  "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumnId": "TERMINAL_ID",
   "primaryColumns": {
@@ -1246,16 +1248,16 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 92,
+  "rightColumn": 63,
   "searchKey": "",
   "tabOrder": 1,
-  "tableData": "{{ QRY_MMS_MERCHANT_DETAILS_TERMINALS.data }}",
+  "tableData": "{{QRY_MMS_MERCHANT_DETAILS_TERMI.data}}",
   "textSize": "0.875rem",
-  "topRow": 1,
+  "topRow": 14,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "TOP",
-  "widgetId": "tblTerminals",
+  "widgetId": "5h5c7wvbih",
   "widgetName": "tblTerminals"
 }

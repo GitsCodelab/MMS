@@ -1,1 +1,24 @@
-{"backgroundColor":"#FFFFFF","borderRadius":"{{appsmith.theme.borderRadius.appBorderRadius}}","bottomRow":43,"dynamicBindingPathList":[{"key":"isVisible"}],"isVisible":"{{ !appsmith.URL.queryParams.tab || appsmith.URL.queryParams.tab === 'request' }}","leftColumn":2,"parentId":"0","renderMode":"CANVAS","rightColumn":94,"topRow":19,"type":"CONTAINER_WIDGET","version":1,"widgetId":"cntRequest","widgetName":"cntRequest"}
+{
+  "backgroundColor": "#FFFFFF",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 43,
+  "bottomRowBeforeCollapse": 43,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "isVisible": "{{ !appsmith.URL.queryParams.tab || appsmith.URL.queryParams.tab === 'request' }}",
+  "leftColumn": 2,
+  "originalBottomRow": 43,
+  "originalTopRow": 19,
+  "parentId": "0",
+  "renderMode": "CANVAS",
+  "rightColumn": 94,
+  "topRow": 19,
+  "topRowBeforeCollapse": 19,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "cntRequest",
+  "widgetName": "cntRequest"
+}

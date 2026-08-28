@@ -1,24 +1,22 @@
 {
-  "gitSyncId": "6a8c2e45ad890f2fc697683b_merchant-details-v2-page",
+  "gitSyncId": "6a90be9b196072f7c5154f6a_06b83bbf-3569-4439-80fd-107583e089b6",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 2390,
+          "bottomRow": 1480,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 800,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 78,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -27,7 +25,7 @@
         }
       }
     ],
-    "name": "MerchantDetailsV2",
-    "slug": "merchantdetailsv2"
+    "name": "Page1",
+    "slug": "page1"
   }
 }

@@ -4,7 +4,7 @@
   "borderColor": "#D6D6D6",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 77,
+  "bottomRow": 42,
   "boxShadow": "none",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -45,13 +45,15 @@
     "POC_COUNT",
     "UPG_COUNT"
   ],
-  "columnUpdatedAt": 1787832312779,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1787876339451,
+  "columnWidthMap": {
+    "REQUEST_ID": 372
+  },
   "compactMode": "SHORT",
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndex": "0",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -135,7 +137,7 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onRowSelected": "{{ navigateTo('MerchantDetailsV2', { REQUEST_ID: tblMerchants.selectedRow.REQUEST_ID, MERCHANT_ID: tblMerchants.selectedRow.MERCHANT_ID }, 'SAME_WINDOW'); }}",
+  "onRowSelected": "{{navigateTo('Page1', {\n  REQUEST_ID: tblMerchants.selectedRow.REQUEST_ID,\n  MERCHANT_ID: tblMerchants.selectedRow.MERCHANT_ID\n}, 'SAME_WINDOW');}}",
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumnId": "REQUEST_ID",
