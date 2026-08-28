@@ -33,6 +33,9 @@
         "Ubuntu"
       ]
     },
+    "fontSize": {
+      "appFont": "13px"
+    },
     "order": 8
   },
   "displayName": "Moon",
@@ -51,6 +54,9 @@
     },
     "fontFamily": {
       "appFont": "Inter"
+    },
+    "fontSize": {
+      "appFont": "13px"
     }
   },
   "stylesheet": {
@@ -397,6 +403,7 @@
     "TEXT_WIDGET": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+      "fontSize": "{{appsmith.theme.fontSize.appFont}}",
       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
     "VIDEO_WIDGET": {
