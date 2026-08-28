@@ -34,15 +34,7 @@
       "isDefault": true
     },
     {
-      "id": "MerchantDetailsV2",
-      "isDefault": false
-    },
-    {
-      "id": "MerchantDetailsV2 Copy",
-      "isDefault": false
-    },
-    {
-      "id": "Page1",
+      "id": "MerchantDetails",
       "isDefault": false
     }
   ],
