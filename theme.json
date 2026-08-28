@@ -16,8 +16,8 @@
       }
     },
     "colors": {
-      "backgroundColor": "#f8fafc",
-      "primaryColor": "#64748b"
+      "backgroundColor": "#FAFBFC",
+      "primaryColor": "#07090F"
     },
     "fontFamily": {
       "appFont": [
@@ -40,17 +40,17 @@
   "name": "Sharp",
   "properties": {
     "borderRadius": {
-      "appBorderRadius": "0.375rem"
+      "appBorderRadius": "0.5rem"
     },
     "boxShadow": {
       "appBoxShadow": "none"
     },
     "colors": {
-      "backgroundColor": "#f8fafc",
-      "primaryColor": "#64748b"
+      "backgroundColor": "#FAFBFC",
+      "primaryColor": "#07090F"
     },
     "fontFamily": {
-      "appFont": "Nunito Sans"
+      "appFont": "Inter"
     }
   },
   "stylesheet": {
