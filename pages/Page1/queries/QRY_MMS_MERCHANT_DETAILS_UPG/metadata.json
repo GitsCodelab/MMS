@@ -31,7 +31,7 @@
     ],
     "name": "QRY_MMS_MERCHANT_DETAILS_UPG",
     "pageId": "Page1",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }
