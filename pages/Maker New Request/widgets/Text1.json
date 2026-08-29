@@ -38,13 +38,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 21,
   "shouldTruncate": false,
-  "text": "Merchant Details",
+  "text": "New Request",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "vr9yk0utzi",
+  "widgetId": "klno3efx51",
   "widgetName": "Text1"
 }

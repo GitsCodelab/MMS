@@ -5,7 +5,7 @@
   "boxShadow": "none",
   "buttonColor": "#ef4444",
   "buttonStyle": "PRIMARY",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "dynamicBindingPathList": [],
   "dynamicTriggerPathList": [],
   "iconName": "arrow-bottom-left",

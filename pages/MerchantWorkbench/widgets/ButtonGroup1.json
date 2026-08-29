@@ -22,6 +22,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButtonfctxj7sdo4.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
     }
   ],
   "groupButtons": {
@@ -36,6 +39,7 @@
       "isVisible": true,
       "label": "Add",
       "menuItems": {},
+      "onClick": "{{navigateTo('Maker New Request', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },

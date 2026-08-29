@@ -36,6 +36,10 @@
     {
       "id": "MerchantDetails",
       "isDefault": false
+    },
+    {
+      "id": "Maker New Request",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
