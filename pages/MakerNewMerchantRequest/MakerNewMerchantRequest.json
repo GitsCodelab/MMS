@@ -1,12 +1,12 @@
 {
   "gitSyncId": "6a9201d1d0c27649caf61518_cab8f862-80bb-49fb-8c77-8056585ef2cc",
   "unpublishedPage": {
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1410,
+          "bottomRow": 1570,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
