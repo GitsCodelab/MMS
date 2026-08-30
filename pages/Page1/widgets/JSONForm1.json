@@ -250,7 +250,8 @@
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY",
-    "isVisible": false
+    "isVisible": false,
+    "display": "none"
   },
   "title": "Form",
   "topRow": 7,
