@@ -249,7 +249,8 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "PRIMARY"
+    "buttonVariant": "PRIMARY",
+    "isVisible": false
   },
   "title": "Form",
   "topRow": 7,
