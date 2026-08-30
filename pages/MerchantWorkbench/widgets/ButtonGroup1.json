@@ -29,7 +29,7 @@
   ],
   "groupButtons": {
     "groupButton2": {
-      "buttonColor": "#2c2cb5",
+      "buttonColor": "#231f20",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
       "iconName": "add",
@@ -95,7 +95,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
+  "rightColumn": 16,
   "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
