@@ -244,15 +244,7 @@
   "scrollContents": true,
   "showReset": true,
   "sourceData": "",
-  "submitButtonLabel": "Submit",
-  "submitButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "PRIMARY",
-    "isVisible": false,
-    "display": "none"
-  },
+  
   "title": "Form",
   "topRow": 7,
   "type": "JSON_FORM_WIDGET",
