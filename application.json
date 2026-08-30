@@ -38,11 +38,7 @@
       "isDefault": false
     },
     {
-      "id": "Maker New Request",
-      "isDefault": false
-    },
-    {
-      "id": "Page1",
+      "id": "MakerNewMerchantRequest",
       "isDefault": false
     }
   ],

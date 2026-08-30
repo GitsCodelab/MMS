@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "6a90be9b196072f7c5154f6a_06b83bbf-3569-4439-80fd-107583e089b6",
+  "gitSyncId": "6a9201d1d0c27649caf61518_cab8f862-80bb-49fb-8c77-8056585ef2cc",
   "unpublishedPage": {
     "isHidden": true,
     "layouts": [
       {
         "dsl": {
-          "backgroundColor": "#FFFFFF!important",
-          "bottomRow": 720,
+          "backgroundColor": "none",
+          "bottomRow": 1410,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "MerchantDetails",
-    "slug": "merchantdetails"
+    "name": "MakerNewMerchantRequest",
+    "slug": "makernewmerchantrequest"
   }
 }
