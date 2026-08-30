@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 180,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,45 +11,40 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "g8k3kvm2md",
-  "leftColumn": 4,
+  "key": "artnxwlavy",
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 104,
+  "mobileBottomRow": 8,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 15,
-  "mobileTopRow": 100,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 180,
-  "originalTopRow": 176,
   "overflow": "NONE",
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 19,
+  "rightColumn": 21,
   "shouldTruncate": false,
-  "text": "{{frmMakerRequest.formData.Identity}}",
+  "text": "New Request",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 176,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "9x9kf1lk46",
-  "widgetName": "Text2"
+  "widgetId": "99k2plh6y1",
+  "widgetName": "Text1"
 }

@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 154,
+  "bottomRow": 146,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -239,12 +239,12 @@
   ],
   "dynamicTriggerPathList": [],
   "fieldLimitExceeded": false,
-  "fixedFooter": true, 
+  "fixedFooter": true,
   "flexVerticalAlignment": "center",
   "isLoading": false,
   "isVisible": true,
   "key": "yiun8fedht",
-  "leftColumn": 2,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -253,8 +253,8 @@
   "mobileRightColumn": 10,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "originalBottomRow": 92,
-  "originalTopRow": 15,
+  "originalBottomRow": 146,
+  "originalTopRow": 5,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -267,13 +267,13 @@
     "buttonVariant": "SECONDARY"
   },
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
+  "rightColumn": 39,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
       "children": {
         "Identity": {
-          "accessor": "Identity",
+          "accessor": "pfrmIdentity",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(frmMakerRequest.sourceData, frmMakerRequest.formData, frmMakerRequest.fieldState)}}",
           "boxShadow": "none",
           "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(frmMakerRequest.sourceData, frmMakerRequest.formData, frmMakerRequest.fieldState)}}",
@@ -442,7 +442,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Identity",
+          "label": "frmIdentity",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Identity",
           "position": 0,
@@ -457,7 +457,7 @@
           }
         },
         "customField1": {
-          "accessor": "frmContact",
+          "accessor": "pfrmContact",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(frmMakerRequest.sourceData, frmMakerRequest.formData, frmMakerRequest.fieldState)}}",
           "boxShadow": "none",
           "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(frmMakerRequest.sourceData, frmMakerRequest.formData, frmMakerRequest.fieldState)}}",
@@ -669,7 +669,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Contact",
+          "label": "frmContact",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "customField1",
           "position": 1,
@@ -702,7 +702,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "",
-  "topRow": 15,
+  "topRow": 5,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,

@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "6a9201d1d0c27649caf61518_dd5478bc-26a3-4f7a-bcd4-6d401cd0b840",
+  "gitSyncId": "6a9201d1d0c27649caf61518_cab8f862-80bb-49fb-8c77-8056585ef2cc",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1800,
+          "bottomRow": 640,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +25,7 @@
         }
       }
     ],
-    "name": "Maker New Request",
-    "slug": "maker-new-request"
+    "name": "Page1",
+    "slug": "page1"
   }
 }
