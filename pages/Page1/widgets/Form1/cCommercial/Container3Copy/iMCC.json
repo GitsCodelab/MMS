@@ -1,0 +1,66 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTooltip"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "luadnyfnft",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "MMC",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "{{\n  (() => {\n    const label = iMCC.options\n      .find(x => x.value == iMCC.selectedOptionValue)\n      ?.label;\n\n    if (!label) return \"\";\n\n    const parts = label.split(\" | \");\n\n    return `MCC: ${parts[0]}\nCategory: ${parts[1]}\nStandard MDR: ${parts[2]}`;\n  })()\n}}",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 43,
+  "needsErrorInfo": false,
+  "optionLabel": "CATEGORY_MCC_MDR",
+  "optionValue": "MCC_ID",
+  "parentColumnSpace": 4.4296875,
+  "parentId": "vfzr4blemx",
+  "parentRowSpace": 10,
+  "placeholderText": "Select MMC",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "sourceData": "{{QRY_MMS_MAKER_MCC.data}}",
+  "topRow": 7,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "8ax9wsy41u",
+  "widgetName": "iMCC"
+}
