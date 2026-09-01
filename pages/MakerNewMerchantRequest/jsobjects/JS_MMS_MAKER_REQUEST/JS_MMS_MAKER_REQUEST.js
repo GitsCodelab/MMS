@@ -1,43 +1,71 @@
 export default {
-  getRequestData() {
-    return {
-      identity: {
-        cif: iCIF.text,
-        nationalId: iNationalID.text,
-        ownerNameAr: iOwnerName.text,
-        companyName: iCompanyName.text,
-        merchantNameEn: iMerchantNameEN.text,
-        merchantNameAr: iMerchantNameAR.text
-      },
 
-      contact: {
-        contactNameAr: iContactName.text,
-        mobilePrimary: PhoneInput1.phoneNumber,
-        addressEn: iAddressEN.text,
-        addressAr: iAddressAR.text
-      },
+	generateRequestId: async () => {
+		const requestId = crypto
+		.randomUUID()
+		.replace(/-/g, "")
+		.toUpperCase();
 
-      location: {
-        city: iCity.text,
-        region: iRegion.text,
-        branchCode: iBranch.selectedOptionValue,
-        teamLeader: iTeamLeader.selectedOptionValue,
-        rmOracleCode: iRM_Oracle_CODE.selectedOptionValue
-      },
+		await storeValue("MMS_REQUEST_ID", requestId);
 
-      commercial: {
-        bankAccount: iBankAccount.text,
-        mccId: iMCC.selectedOptionValue,
-        packageId: iPackage.selectedOptionValue,
-        contractMdr: iMDR.text
-      },
+		return requestId;
+	},
 
-      equipment: {
-        pos: iPOS.selectedOptionValue,
-        posCondition: iPOS_Condition.selectedOptionValue
-      },
+	getRequestId: () => {
+		return appsmith.store.MMS_REQUEST_ID || "";
+	},
 
-      merchantComment: iMerchant_COMM.text
-    };
-  }
-};
+	getRequestData: () => {
+		return {
+			request: {
+				contractSerial: iContractSerial.text,
+				requestDate: new Date().toISOString()
+			},
+
+			identity: {
+				cif: iCIF.text,
+				nationalId: String(iNationalID.text || ""),
+				ownerNameAr: iOwnerName.text,
+				companyName: iCompanyName.text,
+				merchantNameEn: iMerchantNameEN.text,
+				merchantNameAr: iMerchantNameAR.text
+			},
+
+			contact: {
+				contactNameAr: iContactName.text.text,
+				addressEn: iAddressEN.text,
+				addressAr: iAddressAR.text
+			},
+
+			location: {
+				city: iCity.text,
+				region: iRegion.text,
+				branchCode: iBranch.selectedOptionValue,
+				teamLeader: iTeamLeader.selectedOptionValue,
+				rmOracleCode: iRM_Oracle_CODE.selectedOptionValue
+			},
+
+			commercial: {
+				bankAccount: iBankAccount.text,
+				mccId: iMCC.selectedOptionValue,
+				packageId: iPackage.selectedOptionValue,
+				contractMdr: iContractMDR.text
+				? Number(iContractMDR.text)
+				: null,
+				contractMdrValue: iContractMDR.text
+				? Number(iContractMDR.text)
+				: null,
+				posCommission: iPOSCommission.text
+				? Number(iPOSCommission.text)
+				: null
+			},
+
+			equipment: {
+				pos: iPOS.selectedOptionValue,
+				posCondition: iPOS_Condition.selectedOptionValue
+			},
+
+			merchantComment: iMerchant_COMM.text
+		};
+	}
+}

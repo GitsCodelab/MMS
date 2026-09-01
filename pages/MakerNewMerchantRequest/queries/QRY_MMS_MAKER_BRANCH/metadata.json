@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "SELECT DISTINCT BRANCH_CODE \"value\", nvl(BRANCH_NAME,BRANCH_CODE) \"label\" FROM TALY_BO_REP.MMS_BRANCH B ORDER BY B.BRANCH_CODE"
+          "data": "SELECT DISTINCT  BRANCH_CODE \"value\", nvl(BRANCH_NAME,BRANCH_CODE) \"label\" FROM TALY_BO_REP.MMS_BRANCH B ORDER BY B.BRANCH_CODE"
         },
         "preparedStatement": {
           "data": true

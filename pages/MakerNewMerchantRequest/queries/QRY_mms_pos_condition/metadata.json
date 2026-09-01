@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "SELECT * FROM mms_pos_condition where ACTIVE_FLAG = 1 "
+          "data": "SELECT POS_CONDITION, RAWTOHEX(CONDITION_ID) CONDITION_ID FROM mms_pos_condition where ACTIVE_FLAG = 1 "
         },
         "preparedStatement": {
           "data": true

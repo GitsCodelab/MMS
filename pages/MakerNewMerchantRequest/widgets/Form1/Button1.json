@@ -5,13 +5,19 @@
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": true,
+  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
     },
     {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "isDefaultClickDisabled": true,
@@ -26,13 +32,14 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "originalBottomRow": 168,
-  "originalTopRow": 164,
+  "onClick": "{{JS_MMS_MAKER_REQUEST.generateRequestId();\nUPD_MMS_CREATE_REQUEST.run().then(() => {\n  showAlert('\"Request is created sucessfully\"', 'success');\n}).catch(() => {\n  showAlert('\"Your request is fail to created\"', 'error');\n});}}",
+  "originalBottomRow": 176,
+  "originalTopRow": 172,
   "parentId": "9a9otr7few",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": true,
+  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 60,
   "text": "Submit",
