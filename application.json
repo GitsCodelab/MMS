@@ -40,6 +40,10 @@
     {
       "id": "MakerNewMerchantRequest",
       "isDefault": false
+    },
+    {
+      "id": "MakerEditMerchantRequest",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

@@ -32,7 +32,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{JS_MMS_MAKER_REQUEST.generateRequestId();\nUPD_MMS_CREATE_REQUEST.run().then(() => {\n  JS_MMS_DOCUMENTS.uploadAll();\n  showAlert('\"Request is created sucessfully\"', 'success');\n}).catch(() => {\n  showAlert('\"Your request is fail to created\"', 'error');\n});}}",
+  "onClick": "{{JS_MMS_MAKER_REQUEST.generateRequestId();\nUPD_MMS_CREATE_REQUEST.run().then(() => {\n  JS_MMS_DOCUMENTS.uploadAll();\n  showAlert('\"Request is created sucessfully\"', 'success');\n  navigateTo('MakerEditMerchantRequest', {\n    \"requestId\": {}\n  }, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('\"Your request is fail to created\"', 'error');\n});}}",
   "originalBottomRow": 198,
   "originalTopRow": 194,
   "parentId": "9a9otr7few",

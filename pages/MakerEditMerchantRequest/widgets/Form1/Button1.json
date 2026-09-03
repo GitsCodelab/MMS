@@ -1,0 +1,51 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 198,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "e2anh5ahd7",
+  "leftColumn": 55,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{JS_MMS_MAKER_REQUEST.generateRequestId();\nUPD_MMS_CREATE_REQUEST.run().then(() => {\n  JS_MMS_DOCUMENTS.uploadAll();\n  showAlert('\"Request is created sucessfully\"', 'success');\n}).catch(() => {\n  showAlert('\"Your request is fail to created\"', 'error');\n});}}",
+  "originalBottomRow": 198,
+  "originalTopRow": 194,
+  "parentId": "sfxyj65s0z",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "text": "Submit",
+  "topRow": 194,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "bqgjj0u9aw",
+  "widgetName": "Button1"
+}

@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 44,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "luadnyfnft",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Package",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 43,
+  "needsErrorInfo": false,
+  "optionLabel": "DESCRIPTION",
+  "optionValue": "PACKAGE_ID",
+  "parentColumnSpace": 4.4296875,
+  "parentId": "krn5pacwc8",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Package",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "sourceData": "{{QRY_MMS_MAKER_PACKAGE.data}}",
+  "topRow": 37,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "d0uohd0qyr",
+  "widgetName": "iPackage"
+}
