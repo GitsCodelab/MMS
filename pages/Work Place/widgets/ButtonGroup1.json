@@ -3,7 +3,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 4,
   "boxShadow": "none",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "PRIMARY",
   "childStylesheet": {
     "button": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
@@ -24,29 +24,17 @@
       "key": "groupButtons.groupButtonfctxj7sdo4.onClick"
     },
     {
-      "key": "groupButtons.groupButton2.onClick"
+      "key": "groupButtons.groupButton8ozruvgflg.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemr7717xq9pi.onClick"
     }
   ],
   "groupButtons": {
-    "groupButton2": {
-      "buttonColor": "#231f20",
-      "buttonType": "SIMPLE",
-      "disabledWhenInvalid": false,
-      "iconName": "add",
-      "id": "groupButton2",
-      "index": 0,
-      "isDisabled": false,
-      "isVisible": true,
-      "label": "Add",
-      "menuItems": {},
-      "onClick": "{{navigateTo('Maker New Request  V1', {}, 'SAME_WINDOW');}}",
-      "placement": "CENTER",
-      "widgetId": ""
-    },
     "groupButton8ozruvgflg": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "iconName": "compressed",
+      "iconName": "confirm",
       "id": "groupButton8ozruvgflg",
       "index": 2,
       "isDisabled": false,
@@ -76,6 +64,44 @@
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "gu6tiqtto3"
+    },
+    "groupButtono0zrwxp6r3": {
+      "buttonColor": "#15803d",
+      "buttonType": "MENU",
+      "disabledWhenInvalid": false,
+      "iconAlign": "left",
+      "iconName": "add",
+      "id": "groupButtono0zrwxp6r3",
+      "index": 0,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "New",
+      "menuItems": {
+        "menuItemr7717xq9pi": {
+          "backgroundColor": "",
+          "iconName": "user",
+          "id": "menuItemr7717xq9pi",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "New Merchant",
+          "onClick": "{{navigateTo('MakerNewMerchantRequest', {}, 'SAME_WINDOW');}}",
+          "widgetId": "755raiq3jk"
+        },
+        "menuItemvr2ue9zhxz": {
+          "id": "menuItemvr2ue9zhxz",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "New Terminal",
+          "widgetId": "r1v6hr8oyr"
+        }
+      },
+      "placement": "START",
+      "variant": "filled",
+      "widgetId": "0bjy5t9hlg"
     }
   },
   "isCanvas": false,
@@ -95,7 +121,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 19,
   "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,

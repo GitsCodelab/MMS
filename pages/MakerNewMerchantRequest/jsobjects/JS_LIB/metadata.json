@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6a93dee5abcbd7b05811cdf7_15d768e2-4e27-4b86-9864-b3b47ab1f0e8",
+  "id": "MakerNewMerchantRequest_JS_LIB",
+  "unpublishedCollection": {
+    "name": "JS_LIB",
+    "pageId": "MakerNewMerchantRequest",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
