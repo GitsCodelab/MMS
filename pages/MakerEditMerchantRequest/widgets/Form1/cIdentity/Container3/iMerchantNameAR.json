@@ -3,15 +3,18 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 57,
+  "bottomRow": 65,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].MERCHANT_NAME_AR }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "showStepArrows": false,
-  "topRow": 50,
+  "topRow": 58,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "0m9encpneg",

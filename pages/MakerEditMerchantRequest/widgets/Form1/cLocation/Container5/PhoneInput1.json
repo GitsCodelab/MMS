@@ -8,13 +8,16 @@
   "bottomRow": 63,
   "boxShadow": "none",
   "defaultDialCode": "+20",
-  "defaultText": "",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].MOBILE_PRIMARY }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",

@@ -4,12 +4,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 207,
+  "bottomRow": 195,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 2000,
+      "bottomRow": 1860,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -59,6 +59,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
@@ -73,8 +74,8 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 207,
-  "originalTopRow": 7,
+  "originalBottomRow": 195,
+  "originalTopRow": 9,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -83,7 +84,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldScrollContents": true,
-  "topRow": 7,
+  "topRow": 9,
   "type": "FORM_WIDGET",
   "widgetId": "7556jnx402",
   "widgetName": "Form1"

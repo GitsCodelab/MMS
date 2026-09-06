@@ -5,25 +5,28 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].OTHER_POS_COMMISSION }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
+  "iconAlign": "right",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
   "key": "qrffvazvpm",
-  "label": "Bank Account",
+  "label": "Contract MDR Amount",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -31,7 +34,9 @@
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
+  "maxNum": "100",
   "minDynamicHeight": 4,
+  "minNum": "0",
   "minWidth": 450,
   "mobileBottomRow": 7,
   "mobileLeftColumn": 1,
@@ -39,9 +44,9 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "parentColumnSpace": 2.3203125,
-  "parentId": "krn5pacwc8",
+  "parentId": "6hhrngfwq2",
   "parentRowSpace": 10,
-  "placeholderText": "POS Commission",
+  "placeholderText": "Contract MDR (Fixed Amount )",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
@@ -51,6 +56,6 @@
   "topRow": 8,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "wk9fy21nxm",
-  "widgetName": "iPOSCommission"
+  "widgetId": "8wv5hqm7ow",
+  "widgetName": "iContractMDRValue"
 }

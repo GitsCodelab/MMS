@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 14,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  MMS_MERCHANT_REQUEST.data[0].MCC_ID_HEX || \"\" ))(iMCC.options, iMCC.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -31,7 +34,7 @@
   "key": "luadnyfnft",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "MMC",
+  "labelText": "MCC",
   "labelTextSize": "0.875rem",
   "labelTooltip": "",
   "labelWidth": 5,
@@ -52,10 +55,10 @@
   "placeholderText": "Select MMC",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_MMS_MAKER_MCC.data}}",
-  "topRow": 15,
+  "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "3hu0khl4iz",

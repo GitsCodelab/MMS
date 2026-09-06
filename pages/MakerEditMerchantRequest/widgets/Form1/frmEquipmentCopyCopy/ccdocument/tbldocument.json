@@ -40,7 +40,7 @@
     "size",
     "dataFormat"
   ],
-  "columnUpdatedAt": 1788459045205,
+  "columnUpdatedAt": 1788606111585,
   "columnWidthMap": {
     "DOCUMENT_STATUS": 120,
     "FILE_SIZE": 108,
@@ -66,9 +66,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "primaryColumns.type.computedValue"
     },
     {
@@ -88,6 +85,9 @@
     },
     {
       "key": "primaryColumns.dataFormat.computedValue"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
@@ -280,7 +280,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "name",
+      "label": "File Name",
       "notation": "standard",
       "originalId": "name",
       "sticky": "",
@@ -314,7 +314,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "size",
+      "label": "Size",
       "notation": "standard",
       "originalId": "size",
       "sticky": "",
@@ -347,7 +347,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "type",
       "notation": "standard",
       "originalId": "type",
@@ -364,7 +364,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "searchKey": "",
-  "tableData": "{{files.files}}",
+  "tableData": "{{QRY_Documents.data}}",
   "textSize": "0.875rem",
   "topRow": 6,
   "totalRecordsCount": 0,

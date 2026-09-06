@@ -27,7 +27,7 @@
     "dynamicBindingPathList": [],
     "name": "QRY_MMS_POS",
     "pageId": "MakerEditMerchantRequest",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

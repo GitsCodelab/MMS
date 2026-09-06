@@ -5,13 +5,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 36,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].COMPANY_NAME }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,7 +26,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "qrffvazvpm",
-  "label": "Company Name",
+  "label": "Company Name ENG",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -45,7 +48,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 62,
   "showStepArrows": false,
   "topRow": 29,
   "type": "INPUT_WIDGET_V2",

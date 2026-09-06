@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 44,
+  "bottomRow": 22,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  MMS_MERCHANT_REQUEST.data[0].PACKAGE_ID_HEX || \"\" ))(iPackage.options, iPackage.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -51,10 +54,10 @@
   "placeholderText": "Select Package",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 62,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_MMS_MAKER_PACKAGE.data}}",
-  "topRow": 37,
+  "topRow": 15,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "d0uohd0qyr",

@@ -1,10 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 41,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].CONTACT_NAME_AR }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,50 +14,45 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "sourceData"
-    }
-  ],
   "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
-  "key": "luadnyfnft",
+  "key": "qrffvazvpm",
+  "label": "Company Name AR",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "POS Condition",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 50,
-  "mobileLeftColumn": 13,
-  "mobileRightColumn": 33,
-  "mobileTopRow": 43,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "optionLabel": "POS_CONDITION",
-  "optionValue": "CONDITION_ID",
-  "parentColumnSpace": 4.4296875,
-  "parentId": "87qx0pofrh",
+  "parentColumnSpace": 2.3203125,
+  "parentId": "g56v2mn5xg",
   "parentRowSpace": 10,
-  "placeholderText": "Select POS Condition",
+  "placeholderText": "Company Name",
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
-  "serverSideFiltering": false,
-  "sourceData": "{{QRY_mms_pos_condition.data}}",
-  "topRow": 7,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "a625avr06g",
-  "widgetName": "iPOS_Condition"
+  "rightColumn": 62,
+  "showStepArrows": false,
+  "topRow": 37,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "8kpsn14pit",
+  "widgetName": "iCompanyNameCopy"
 }
