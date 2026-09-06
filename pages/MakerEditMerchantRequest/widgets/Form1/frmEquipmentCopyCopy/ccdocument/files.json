@@ -37,7 +37,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onFilesSelected": "",
+  "onFilesSelected": "{{JS_MMS_DOCUMENTS.uploadAll();}}",
   "parentColumnSpace": 18.39260768890381,
   "parentId": "8se0wi0ez9",
   "parentRowSpace": 10,

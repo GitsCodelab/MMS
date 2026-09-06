@@ -2,9 +2,9 @@ export default {
 
 	generateRequestId: async () => {
 		const requestId = crypto
-		.randomUUID()
-		.replace(/-/g, "")
-		.toUpperCase();
+			.randomUUID()
+			.replace(/-/g, "")
+			.toUpperCase();
 
 		await storeValue("MMS_REQUEST_ID", requestId);
 
@@ -17,53 +17,42 @@ export default {
 
 	getRequestData: () => {
 		return {
-			request: {
-				contractSerial: iContractSerial.text,
-				requestDate: new Date().toISOString()
-			},
+			contractSerial: iContractSerial.text,
+			requestDate: new Date().toISOString(),
 
-			identity: {
-				cif: iCIF.text,
-				nationalId: String(iNationalID.text || ""),
-				ownerNameAr: iOwnerName.text,
-				companyName: iCompanyName.text,
-				merchantNameEn: iMerchantNameEN.text,
-				merchantNameAr: iMerchantNameAR.text
-			},
+			cif: iCIF.text,
+			nationalId: String(iNationalID.text || ""),
+			ownerNameAr: iOwnerName.text,
+			companyName: iCompanyName.text,
+			merchantNameEn: iMerchantNameEN.text,
+			merchantNameAr: iMerchantNameAR.text,
 
-			contact: {
-				contactNameAr: iContactName.text.text,
-				addressEn: iAddressEN.text,
-				addressAr: iAddressAR.text
-			},
+			contactNameAr: iContactName.text?.text || "",
+			mobilePrimary: iMobilePrumary.text,
 
-			location: {
-				city: iCity.text,
-				region: iRegion.text,
-				branchCode: iBranch.selectedOptionValue,
-				teamLeader: iTeamLeader.selectedOptionValue,
-				rmOracleCode: iRM_Oracle_CODE.selectedOptionValue
-			},
+			addressEn: iAddressEN.text,
+			addressAr: iAddressAR.text,
 
-			commercial: {
-				bankAccount: iBankAccount.text,
-				mccId: iMCC.selectedOptionValue,
-				packageId: iPackage.selectedOptionValue,
-				contractMdr: iContractMDR.text
+			city: iCity.text,
+			region: iRegion.text,
+			branchCode: iBranch.selectedOptionValue,
+			teamLeader: iTeamLeader.selectedOptionValue,
+			rmOracleCode: iRM_Oracle_CODE.selectedOptionValue,
+
+			bankAccount: iBankAccount.text,
+			mccId: iMCC.selectedOptionValue,
+			packageId: iPackage.selectedOptionValue,
+
+			contractMdr: iContractMDR.text
 				? Number(iContractMDR.text)
 				: null,
-				contractMdrValue: iContractMDR.text
-				? Number(iContractMDR.text)
-				: null,
-				posCommission: iPOSCommission.text
+
+			posCommission: iPOSCommission.text
 				? Number(iPOSCommission.text)
-				: null
-			},
+				: null,
 
-			equipment: {
-				pos: iPOS.selectedOptionValue,
-				posCondition: iPOS_Condition.selectedOptionValue
-			},
+			pos: iPOS.selectedOptionValue,
+			posCondition: iPOS_Condition.selectedOptionValue,
 
 			merchantComment: iMerchant_COMM.text
 		};

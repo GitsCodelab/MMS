@@ -64,9 +64,6 @@
         "key": "path"
       },
       {
-        "key": "bodyFormData[0].value"
-      },
-      {
         "key": "queryParameters[0].value"
       },
       {
@@ -74,6 +71,9 @@
       },
       {
         "key": "queryParameters[2].value"
+      },
+      {
+        "key": "bodyFormData[0].value"
       }
     ],
     "name": "api_doc_upload",

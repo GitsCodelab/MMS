@@ -8,16 +8,13 @@
   "bottomRow": 63,
   "boxShadow": "none",
   "defaultDialCode": "+20",
-  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].MOBILE_PRIMARY }}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -44,7 +41,7 @@
   "mobileTopRow": 65,
   "needsErrorInfo": false,
   "parentColumnSpace": 4.4296875,
-  "parentId": "avhmwk9q7w",
+  "parentId": "osdh9d85wm",
   "parentRowSpace": 10,
   "placeholderText": "Primary Mobile Number",
   "renderMode": "CANVAS",
@@ -54,6 +51,6 @@
   "topRow": 56,
   "type": "PHONE_INPUT_WIDGET",
   "version": 1,
-  "widgetId": "9kehu20ipq",
-  "widgetName": "PhoneInput1"
+  "widgetId": "7e8kq6kh1a",
+  "widgetName": "iMobilePrumary"
 }
