@@ -1,16 +1,5 @@
 export default {
 
-	generateRequestId: async () => {
-		const requestId = crypto
-			.randomUUID()
-			.replace(/-/g, "")
-			.toUpperCase();
-
-		await storeValue("MMS_REQUEST_ID", requestId);
-
-		return requestId;
-	},
-
 	getRequestId: () => {
 		return "{{appsmith.URL.queryParams.requestId}}";
 	},
@@ -18,11 +7,12 @@ export default {
 	getRequestData: () => {
 		return {
 			contractSerial: iContractSerial.text,
+			
 
 			requestDate: MMS_MERCHANT_REQUEST.data?.[0]?.REQUEST_DATE || null,
 
 			cif: iCIF.text,
-
+			companyNameAr:iCompanyNameAR.text,
 			nationalId: String(iNationalID.text || ""),
 
 			ownerNameAr: iOwnerName.text,
@@ -56,9 +46,11 @@ export default {
 			mccId: iMCC.selectedOptionValue,
 
 			packageId: iPackage.selectedOptionValue,
+			contractMdr: iContractMDR.text? Number(iContractMDR.text): null,
+			contractMdrValue: iContractMDRValue.text? Number(iContractMDRValue.text): null,
 
-			contractMdr: iContractMDR.text? Number(iContractMDR.text)				: null,
 			posCommission: null,
+			merchantComment:iMerchant_COMM.text
 			
 		};
 	}

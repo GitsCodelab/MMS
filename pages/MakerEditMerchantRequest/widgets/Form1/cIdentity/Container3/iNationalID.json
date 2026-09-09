@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19,
+  "bottomRow": 21,
   "boxShadow": "none",
   "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].NATIONAL_ID }}",
   "dynamicBindingPathList": [
@@ -32,7 +32,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "maxNum": "",
   "minDynamicHeight": 4,

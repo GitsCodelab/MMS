@@ -1,0 +1,85 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "SECONDARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "heat-grid",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Save",
+      "menuItems": {},
+      "onClick": "{{UPD_MMS_UPDATE_REQUEST.run().then(() => {\n  MMS_MERCHANT_REQUEST.run();\n  showAlert('Saved as draft', 'success');\n}).catch(() => {\n  showAlert('Fail to save', 'error');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "add",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Submit",
+      "menuItems": {},
+      "onClick": "{{showModal(md_submit_confirm.name).then(() => {\n  UPD_MMS_SUBMIT_REQUEST.run().then(() => {\n    showAlert('success');\n  }).catch(() => {\n    showAlert('failure');\n  });\n}).catch(() => {\n  showAlert('Failure', 'error');\n});}}",
+      "placement": "START",
+      "widgetId": ""
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "x9xs89031n",
+  "leftColumn": 52,
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "originalBottomRow": 11,
+  "originalTopRow": 7,
+  "parentColumnSpace": 7.828125,
+  "parentId": "furuoxrwwb",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "1h41xib3rf",
+  "widgetName": "ButtonGroup1"
+}

@@ -13,4 +13,19 @@ export default {
 	getRequestId: () => {
 		return appsmith.store.MMS_REQUEST_ID || "";
 	},
+	
+	
+	GenerateUUID: async () => {
+		const requestId = crypto
+		.randomUUID()
+		.replace(/-/g, "")
+		.toUpperCase();
+
+		await storeValue("GenerateUUID", requestId);
+
+		return requestId;
+	},
+	getUUID:() => {
+		return appsmith.store.GenerateUUID;
+	}
 }

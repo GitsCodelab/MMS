@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{UPD_MMS_SUBMIT_REQUEST.run().then(() => {\n  showAlert('Submitted', 'success');\n}).catch(() => {\n  showAlert('Fail to submit', 'error');\n});}}",
+  "onClick": "{{UPD_MMS_SUBMIT_REQUEST.run().then(() => {\n  showAlert('Submitted', 'success');\n  closeModal(md_submit_confirm.name);\n}).catch(() => {\n  showAlert('Fail to submit', 'error');\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "bhl3e1h4rn",

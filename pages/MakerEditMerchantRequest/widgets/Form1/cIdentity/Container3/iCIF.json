@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 7,
   "boxShadow": "none",
   "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].CIF }}",
   "dynamicBindingPathList": [

@@ -2,9 +2,9 @@ export default {
 
 	generateRequestId: async () => {
 		const requestId = crypto
-			.randomUUID()
-			.replace(/-/g, "")
-			.toUpperCase();
+		.randomUUID()
+		.replace(/-/g, "")
+		.toUpperCase();
 
 		await storeValue("MMS_REQUEST_ID", requestId);
 
@@ -17,6 +17,7 @@ export default {
 
 	getRequestData: () => {
 		return {
+			requestTypeId:1,
 			contractSerial: iContractSerial.text,
 			requestDate: new Date().toISOString(),
 
@@ -44,12 +45,12 @@ export default {
 			packageId: iPackage.selectedOptionValue,
 
 			contractMdr: iContractMDR.text
-				? Number(iContractMDR.text)
-				: null,
+			? Number(iContractMDR.text)
+			: null,
 
 			posCommission: iPOSCommission.text
-				? Number(iPOSCommission.text)
-				: null,
+			? Number(iPOSCommission.text)
+			: null,
 
 			pos: iPOS.selectedOptionValue,
 			posCondition: iPOS_Condition.selectedOptionValue,

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6a93dee5abcbd7b05811cdf7_8beb1952-9c2b-492c-98f3-2d6abe60c6cb",
+  "id": "MakerEditMerchantRequest_JS_MMS_TERMINAL",
+  "unpublishedCollection": {
+    "name": "JS_MMS_TERMINAL",
+    "pageId": "MakerEditMerchantRequest",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

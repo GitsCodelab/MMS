@@ -25,7 +25,7 @@
     "fullyQualifiedName": "JS_MMS_MAKER_REQUEST.getRequestId",
     "name": "getRequestId",
     "pageId": "MakerEditMerchantRequest",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

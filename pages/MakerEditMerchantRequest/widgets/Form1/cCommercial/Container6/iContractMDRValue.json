@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].OTHER_POS_COMMISSION }}",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].CONTRACT_MDR_VALUE }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -34,9 +34,9 @@
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
-  "maxNum": "100",
+  "maxNum": "",
   "minDynamicHeight": 4,
-  "minNum": "0",
+  "minNum": "",
   "minWidth": 450,
   "mobileBottomRow": 7,
   "mobileLeftColumn": 1,
