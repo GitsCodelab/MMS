@@ -2,22 +2,21 @@
   "animateLoading": true,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
-  "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 69,
+  "bottomRow": 6,
   "boxShadow": "NONE",
   "children": [
     {
-      "bottomRow": 650,
+      "bottomRow": 60,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
-      "minHeight": 306,
+      "minHeight": 18,
       "parentColumnSpace": 1,
-      "parentId": "rf1scpwrxt",
+      "parentId": "osarc1yff5",
       "parentRowSpace": 1,
       "props": {
         "canExtend": false,
@@ -26,18 +25,18 @@
         "detachFromLayout": true
       },
       "renderMode": "CANVAS",
-      "rightColumn": 283.5,
+      "rightColumn": 94.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "osdh9d85wm",
-      "widgetName": "Canvas6"
+      "widgetId": "jxk494xg82",
+      "widgetName": "Canvas16"
     }
   ],
   "containerStyle": "card",
   "displayName": "Container",
   "dynamicBindingPathList": [],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "hideCard": false,
@@ -46,10 +45,10 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "6vz65gssqc",
+  "key": "9kncsx3vcd",
   "leftColumn": 0,
-  "maxDynamicHeight": 9000,
-  "minDynamicHeight": 10,
+  "maxDynamicHeight": 12,
+  "minDynamicHeight": 5,
   "minWidth": 450,
   "needsErrorInfo": false,
   "onCanvasUI": {
@@ -59,28 +58,26 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 69,
-  "originalTopRow": 4,
-  "parentColumnSpace": 4.4296875,
-  "parentId": "3mwyy3s72t",
+  "parentColumnSpace": 1.4765625,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "searchTags": [
     "div",
     "parent",
     "group"
   ],
-  "shouldScrollContents": true,
+  "shouldScrollContents": false,
   "tabId": "",
   "tags": [
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
-  "topRow": 4,
+  "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "rf1scpwrxt",
-  "widgetName": "Container5"
+  "widgetId": "osarc1yff5",
+  "widgetName": "Container8"
 }

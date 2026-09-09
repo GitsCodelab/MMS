@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 44,
+  "bottomRow": 21,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  MMS_MERCHANT_REQUEST.data[0].PACKAGE_ID_HEX || \"\" ))(iPackage.options, iPackage.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -46,7 +49,7 @@
   "optionLabel": "DESCRIPTION",
   "optionValue": "PACKAGE_ID",
   "parentColumnSpace": 4.4296875,
-  "parentId": "vfzr4blemx",
+  "parentId": "gbpmxhzmim",
   "parentRowSpace": 10,
   "placeholderText": "Select Package",
   "renderMode": "CANVAS",
@@ -54,9 +57,9 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_MMS_MAKER_PACKAGE.data}}",
-  "topRow": 37,
+  "topRow": 14,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "sp658smdgg",
+  "widgetId": "e17knqbhnw",
   "widgetName": "iPackage"
 }

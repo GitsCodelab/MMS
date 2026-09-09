@@ -3,15 +3,18 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].CONTRACT_MDR }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -42,18 +45,18 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "parentColumnSpace": 2.3203125,
-  "parentId": "vfzr4blemx",
+  "parentId": "81132a1381",
   "parentRowSpace": 10,
   "placeholderText": "Contract MDR (%)",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 22,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "76agj2cows",
+  "widgetId": "lz5zzxiick",
   "widgetName": "iContractMDR"
 }

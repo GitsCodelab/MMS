@@ -17,14 +17,17 @@ export default {
 
 	getRequestData: () => {
 		return {
-			requestTypeId:1,
+			requestTypeId: 1,
+
 			contractSerial: iContractSerial.text,
 			requestDate: new Date().toISOString(),
 
 			cif: iCIF.text,
 			nationalId: String(iNationalID.text || ""),
+
 			ownerNameAr: iOwnerName.text,
 			companyName: iCompanyName.text,
+
 			merchantNameEn: iMerchantNameEN.text,
 			merchantNameAr: iMerchantNameAR.text,
 
@@ -36,16 +39,22 @@ export default {
 
 			city: iCity.text,
 			region: iRegion.text,
+
 			branchCode: iBranch.selectedOptionValue,
 			teamLeader: iTeamLeader.selectedOptionValue,
 			rmOracleCode: iRM_Oracle_CODE.selectedOptionValue,
 
 			bankAccount: iBankAccount.text,
+
 			mccId: iMCC.selectedOptionValue,
 			packageId: iPackage.selectedOptionValue,
 
 			contractMdr: iContractMDR.text
 			? Number(iContractMDR.text)
+			: null,
+
+			contractMdrValue: iContractMDRValue.text
+			? Number(iContractMDRValue.text)
 			: null,
 
 			posCommission: iPOSCommission.text
@@ -58,4 +67,4 @@ export default {
 			merchantComment: iMerchant_COMM.text
 		};
 	}
-}
+};

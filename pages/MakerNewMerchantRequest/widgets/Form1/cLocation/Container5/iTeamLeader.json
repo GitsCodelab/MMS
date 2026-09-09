@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 35,
   "boxShadow": "none",
   "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_MMS_MAKER_RM.data}}",
-  "topRow": 27,
+  "topRow": 28,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "3ogaajfsps",

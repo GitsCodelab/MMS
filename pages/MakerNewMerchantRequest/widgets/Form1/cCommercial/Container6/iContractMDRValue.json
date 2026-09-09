@@ -3,21 +3,23 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 14,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].CONTRACT_MDR_VALUE }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "right",
-  "iconName": "percentage",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
@@ -32,9 +34,9 @@
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
-  "maxNum": "100",
+  "maxNum": "",
   "minDynamicHeight": 4,
-  "minNum": "0",
+  "minNum": "",
   "minWidth": 450,
   "mobileBottomRow": 7,
   "mobileLeftColumn": 1,
@@ -42,18 +44,18 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "parentColumnSpace": 2.3203125,
-  "parentId": "vfzr4blemx",
+  "parentId": "81132a1381",
   "parentRowSpace": 10,
   "placeholderText": "Contract MDR (Fixed Amount )",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 30,
+  "topRow": 7,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "529u0tuo43",
+  "widgetId": "k5biz3b4gt",
   "widgetName": "iContractMDRValue"
 }
