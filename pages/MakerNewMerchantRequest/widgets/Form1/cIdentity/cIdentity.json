@@ -84,6 +84,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 36,
   "shouldScrollContents": true,
+  "tabOrder": 1,
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,

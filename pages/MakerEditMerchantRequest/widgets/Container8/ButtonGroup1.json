@@ -29,7 +29,7 @@
     "groupButton1": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "disabledWhenInvalid": false,
+      "disabledWhenInvalid": true,
       "iconName": "heat-grid",
       "id": "groupButton1",
       "index": 0,
@@ -44,7 +44,7 @@
     "groupButton2": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "disabledWhenInvalid": false,
+      "disabledWhenInvalid": true,
       "iconName": "add",
       "id": "groupButton2",
       "index": 1,
@@ -61,7 +61,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "x9xs89031n",
-  "leftColumn": 52,
+  "leftColumn": 54,
   "minWidth": 450,
   "mobileBottomRow": 11,
   "mobileLeftColumn": 3,

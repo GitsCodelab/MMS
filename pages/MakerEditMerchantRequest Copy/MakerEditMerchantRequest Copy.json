@@ -1,0 +1,33 @@
+{
+  "gitSyncId": "6aa1537c1e2a7611c7cebc62_354f78d3-feb8-4ac7-9d1f-a3a2724063ea",
+  "unpublishedPage": {
+    "customSlug": "",
+    "isHidden": true,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 2130,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 78,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 94,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "MakerEditMerchantRequest Copy",
+    "slug": "makereditmerchantrequest-copy"
+  }
+}

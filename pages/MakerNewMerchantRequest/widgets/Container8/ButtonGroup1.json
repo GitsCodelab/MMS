@@ -30,7 +30,7 @@
     "groupButton1": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "disabledWhenInvalid": false,
+      "disabledWhenInvalid": true,
       "iconName": "heat-grid",
       "id": "groupButton1",
       "index": 1,
@@ -38,7 +38,7 @@
       "isVisible": true,
       "label": "Save",
       "menuItems": {},
-      "onClick": "{{UPD_MMS_UPDATE_REQUEST.run().then(() => {\n  MMS_MERCHANT_REQUEST.run();\n  showAlert('Saved as draft', 'success');\n}).catch(() => {\n  showAlert('Fail to save', 'error');\n});}}",
+      "onClick": "{{JS_MMS_MAKER_REQUEST.createRequest();}}",
       "placement": "CENTER",
       "widgetId": ""
     },

@@ -2,9 +2,9 @@ export default {
 
 	generateRequestId: async () => {
 		const requestId = crypto
-		.randomUUID()
-		.replace(/-/g, "")
-		.toUpperCase();
+			.randomUUID()
+			.replace(/-/g, "")
+			.toUpperCase();
 
 		await storeValue("MMS_REQUEST_ID", requestId);
 
@@ -26,7 +26,9 @@ export default {
 			nationalId: String(iNationalID.text || ""),
 
 			ownerNameAr: iOwnerName.text,
+
 			companyName: iCompanyName.text,
+			companyNameAr: iCompanyNameAR.text,
 
 			merchantNameEn: iMerchantNameEN.text,
 			merchantNameAr: iMerchantNameAR.text,
@@ -50,21 +52,88 @@ export default {
 			packageId: iPackage.selectedOptionValue,
 
 			contractMdr: iContractMDR.text
-			? Number(iContractMDR.text)
-			: null,
+				? Number(iContractMDR.text)
+				: null,
 
 			contractMdrValue: iContractMDRValue.text
-			? Number(iContractMDRValue.text)
-			: null,
+				? Number(iContractMDRValue.text)
+				: null,
 
-			posCommission: iPOSCommission.text
-			? Number(iPOSCommission.text)
-			: null,
+			posCommission: null,
 
-			pos: iPOS.selectedOptionValue,
-			posCondition: iPOS_Condition.selectedOptionValue,
-
-			merchantComment: iMerchant_COMM.text
+			merchantComment: null
 		};
-	}
+	},
+
+	createRequest: async () => {
+
+    try {
+
+        const requestId = await JS_LIB.generateRequestId();
+
+        if (!requestId) {
+            throw new Error("Request ID was not generated");
+        }
+
+        // 1. Create Oracle request
+        await UPD_MMS_CREATE_REQUEST.run();
+
+        // 2. Upload documents
+        if (files.files && files.files.length > 0) {
+
+            const uploadResult =
+                await JS_MMS_DOCUMENTS.uploadAll();
+
+            console.log(
+                "Upload summary:",
+                uploadResult
+            );
+
+            if (!uploadResult.success) {
+
+                showAlert(
+                    `Request created, but ${uploadResult.failed} document(s) failed to upload`,
+                    "warning"
+                );
+
+                return {
+                    success: false,
+                    requestCreated: true,
+                    requestId: requestId,
+                    uploadResult: uploadResult
+                };
+            }
+        }
+
+        showAlert(
+            "Request is created successfully",
+            "success"
+        );
+
+        return {
+            success: true,
+            requestId: requestId
+        };
+
+    } catch (error) {
+
+        console.log(
+            "Create request failed:",
+            error
+        );
+
+        showAlert(
+            "Your request failed to be created",
+            "error"
+        );
+
+        return {
+            success: false,
+            error: error?.message || String(error)
+        };
+    }
+}
+	
+	
+	
 };

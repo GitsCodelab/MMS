@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "autoFocus": false,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "bottomRow": 7,
   "boxShadow": "none",
   "defaultText": "{{ MMS_MERCHANT_REQUEST.data[0].CIF }}",
@@ -11,22 +11,15 @@
       "key": "accentColor"
     },
     {
-      "key": "borderRadius"
-    },
-    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isDisabled"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": "",
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,

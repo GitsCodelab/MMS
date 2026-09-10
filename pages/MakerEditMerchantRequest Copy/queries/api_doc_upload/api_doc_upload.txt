@@ -1,0 +1,10 @@
+{
+  "requestId": "{{JS_MMS_MAKER_REQUEST.getRequestId()}}",
+  "documentType": "CR",
+  "uploadedBy": "{{appsmith.user.username}}",
+	"originalFileName":"{{files.files[0].name}}",
+	"mimeType":"{{files.files[0].type}}",
+	"filesize":"{{files.files[0].data.length}}",
+	"storedFileName":{{files.files[0].name}},
+	"file":"{{files.files[0].data}}"
+}

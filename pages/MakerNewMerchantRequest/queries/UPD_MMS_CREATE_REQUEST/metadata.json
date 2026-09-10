@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "DECLARE\n    V_REQUEST_ID RAW(16);\n    V_MESSAGE    VARCHAR2(4000);\n    V_MSG        VARCHAR2(4000);\n    V_JSON       CLOB := {{ JSON.stringify(JS_MMS_MAKER_REQUEST.getRequestData()) }};\nBEGIN\n    TALY_BO_REP.MMS_ONBOARDING_PKG.CREATE_REQUEST(\n        P_REQUEST_JSON => V_JSON,\n        P_REQUEST_ID   => V_REQUEST_ID,\n        P_MESSAGE      => V_MESSAGE\n    );\n    SELECT V_REQUEST_ID into V_MESSAGE FROM DUAL;\n    -- Return the message as a result set for Appsmith to read\nEND;"
+          "data": "DECLARE\n\n    V_JSON CLOB :=\n        {{ JSON.stringify(\n            JS_MMS_MAKER_REQUEST.getRequestData()\n        ) }};\n\n    V_REQUEST_ID RAW(16) :=\n        HEXTORAW(\n            '{{ JS_LIB.getRequestId() }}'\n        );\n\nBEGIN\n\n    TALY_BO_REP.MMS_ONBOARDING_PKG.CREATE_REQUEST(\n        P_REQUEST_JSON => V_JSON,\n        P_REQUEST_ID   => V_REQUEST_ID\n    );\n\nEND;"
         },
         "preparedStatement": {
           "data": true

@@ -44,6 +44,14 @@
     {
       "id": "MakerEditMerchantRequest",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
+    },
+    {
+      "id": "MakerEditMerchantRequest Copy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

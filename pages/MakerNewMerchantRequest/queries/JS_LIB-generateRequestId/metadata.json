@@ -26,6 +26,6 @@
     "name": "generateRequestId",
     "pageId": "MakerNewMerchantRequest",
     "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

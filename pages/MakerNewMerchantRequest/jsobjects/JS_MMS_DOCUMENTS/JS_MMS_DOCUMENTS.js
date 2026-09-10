@@ -1,53 +1,93 @@
 export default {
-	async uploadAll() {
+uploadAll: async () => {
 
-		const selectedFiles = files.files || [];
+    const selectedFiles = files.files || [];
 
-		if (selectedFiles.length === 0) {
-			showAlert("Please select at least one document", "warning");
-			return;
-		}
-		// JS_MMS_MAKER_REQUEST.getRequestId()
-		const requestId = "59F2A096DB117D26E063C642320AB95B";
-		const uploadedBy = appsmith.user.username;
+    if (selectedFiles.length === 0) {
+        showAlert(
+            "Please select at least one document",
+            "warning"
+        );
 
-		let successCount = 0;
-		let failedCount = 0;
+        return {
+            success: false,
+            uploaded: 0,
+            failed: 0,
+            errors: [],
+            requestId: JS_LIB.getRequestId()
+        };
+    }
 
-		for (const selectedFile of selectedFiles) {
+    const requestId = JS_LIB.getRequestId();
 
-			try {
+    if (!requestId) {
+        showAlert(
+            "Request ID is missing",
+            "error"
+        );
 
-				await api_doc_upload.run({
-					requestId: requestId,
-					documentType: "CR",
-					uploadedBy: uploadedBy,
-					file: selectedFile
-				});
+        return {
+            success: false,
+            uploaded: 0,
+            failed: selectedFiles.length,
+            errors: ["Request ID is missing"],
+            requestId: ""
+        };
+    }
 
-				successCount++;
+    const uploadedBy = appsmith.user.username;
 
-			} catch (error) {
+    let successCount = 0;
+    let failedCount = 0;
+    const errors = [];
 
-				failedCount++;
+    for (const selectedFile of selectedFiles) {
 
-				console.log(
-					`Failed to upload ${selectedFile.name}`,
-					error
-				);
-			}
-		}
+        try {
 
-		if (failedCount === 0) {
-			showAlert(
-				`${successCount} document(s) uploaded successfully`,
-				"success"
-			);
-		} else {
-			showAlert(
-				`${successCount} uploaded, ${failedCount} failed`,
-				"warning"
-			);
-		}
-	}
+            const result = await api_doc_upload.run({
+                requestId: requestId,
+                uploadedBy: uploadedBy,
+                documentType: "CR",
+                file: selectedFile
+            });
+
+            console.log(
+                "Document upload result:",
+                selectedFile.name,
+                result
+            );
+
+            successCount++;
+
+        } catch (error) {
+
+            failedCount++;
+
+            const errorMessage =
+                error?.message ||
+                String(error);
+
+            errors.push({
+                fileName: selectedFile.name,
+                error: errorMessage
+            });
+
+            console.log(
+                `Failed to upload ${selectedFile.name}:`,
+                error
+            );
+        }
+    }
+
+    return {
+        success: failedCount === 0,
+        uploaded: successCount,
+        failed: failedCount,
+        errors: errors,
+        requestId: requestId
+    };
 }
+
+
+};
