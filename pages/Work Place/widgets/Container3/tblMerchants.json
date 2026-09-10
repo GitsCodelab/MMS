@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderColor": "#f1f5f9",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "borderWidth": "1\n",
-  "bottomRow": 83,
+  "bottomRow": 59,
   "boxShadow": "none",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -66,9 +66,6 @@
     },
     {
       "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "primaryColumns.REQUEST_ID.computedValue"
@@ -140,9 +137,9 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onRowSelected": "{{navigateTo('MakerEditMerchantRequest', {\n  requestId: tblMerchants.selectedRow.REQUEST_ID,\n  MERCHANT_ID: tblMerchants.selectedRow.MERCHANT_ID\n}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 83,
-  "originalTopRow": 36,
-  "parentId": "0",
+  "originalBottomRow": 90,
+  "originalTopRow": 43,
+  "parentId": "2k4fu7fyy8",
   "parentRowSpace": 10,
   "primaryColumnId": "REQUEST_ID",
   "primaryColumns": {
@@ -173,7 +170,7 @@
       "notation": "standard",
       "originalId": "BRANCH_CODE",
       "sticky": "",
-      "textColor": "#FF6347",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -557,17 +554,17 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchKey": "",
   "tabOrder": 1,
   "tableData": "{{ QRY_MMS_MERCHANT_WORKBENCH.data }}\n",
   "textSize": "0.875rem",
-  "topRow": 36,
+  "topRow": 0,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "DEFAULT",
   "version": 2,
   "verticalAlignment": "TOP",
-  "widgetId": "xq1anwdks3",
+  "widgetId": "imxgu785as",
   "widgetName": "tblMerchants"
 }
