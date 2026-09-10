@@ -61,7 +61,7 @@ export default {
 
 			posCommission: null,
 
-			merchantComment: null
+			merchantComment: iMerchant_COMM.text
 		};
 	},
 
@@ -109,7 +109,13 @@ export default {
             "Request is created successfully",
             "success"
         );
-
+			
+		navigateTo(
+    "MakerEditMerchantRequest",
+    {
+        requestId: requestId
+    }
+);
         return {
             success: true,
             requestId: requestId

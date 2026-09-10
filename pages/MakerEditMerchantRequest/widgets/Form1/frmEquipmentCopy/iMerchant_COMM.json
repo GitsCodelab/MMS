@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 25,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultText": "{{MMS_MERCHANT_REQUEST.data[0].REQUEST_COMMENT}}",
   "dynamicBindingPathList": [
@@ -39,14 +39,14 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "parentColumnSpace": 18.69439697265625,
-  "parentId": "c8g9p4fid6",
+  "parentId": "frxlgs87pj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
-  "topRow": 0,
+  "rightColumn": 64,
+  "topRow": 4,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
-  "widgetId": "0hf2ki8dhb",
+  "widgetId": "0s9xt6oidt",
   "widgetName": "iMerchant_COMM"
 }

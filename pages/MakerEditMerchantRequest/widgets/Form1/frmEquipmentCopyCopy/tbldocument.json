@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 31,
+  "bottomRow": 32,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": false,
@@ -151,7 +151,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "parentColumnSpace": 6.7079010009765625,
-  "parentId": "8se0wi0ez9",
+  "parentId": "c2udnijqir",
   "parentRowSpace": 10,
   "primaryColumns": {
     "CREATED_BY": {
@@ -601,11 +601,11 @@
   "searchKey": "",
   "tableData": "{{QRY_Documents.data}}",
   "textSize": "0.875rem",
-  "topRow": 4,
+  "topRow": 5,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "q1uusooik4",
+  "widgetId": "661ezl1ico",
   "widgetName": "tbldocument"
 }
