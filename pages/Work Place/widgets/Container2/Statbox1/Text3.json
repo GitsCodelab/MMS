@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 12,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -25,26 +28,26 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 4,
+  "mobileBottomRow": 12,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 37,
-  "mobileTopRow": 0,
+  "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
-  "originalTopRow": 0,
+  "originalBottomRow": 15,
+  "originalTopRow": 10,
   "overflow": "NONE",
-  "parentId": "tidjk4wifx",
+  "parentId": "q2axkr2ncz",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "shouldTruncate": false,
-  "text": "Cancelled",
+  "text": "{{(QRY_MMS_MERCHANT_WORKBENCH.data || []).length\n  ? (((QRY_MMS_MERCHANT_WORKBENCH.data || []).filter(x => x.STATUS == \"ST-LIVE\").length / (QRY_MMS_MERCHANT_WORKBENCH.data || []).length) * 100).toFixed(1) + \"%\"\n  : \"0%\"}}",
   "textAlign": "LEFT",
-  "textColor": "#999999",
-  "topRow": 0,
+  "textColor": "#03B365",
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "ayqr0hfznk",
-  "widgetName": "Text1Copy"
+  "widgetId": "43t96mudl3",
+  "widgetName": "Text3"
 }
