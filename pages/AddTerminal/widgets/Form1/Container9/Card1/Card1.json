@@ -1,0 +1,160 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#ffffff",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 29,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "cardData": "{{QRY_Merchant.data}}",
+  "childStylesheet": {
+    "footerAction": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 230,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "pf8j0ark9s",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 300,
+      "minWidth": 450,
+      "mobileBottomRow": 300,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 456.04833984375,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "l6g94mt0rl",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 456.04833984375,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "yyasustdna",
+      "widgetName": "Canvas19"
+    }
+  ],
+  "defaultExpanded": true,
+  "defaultSelected": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "selectedAccentColor"
+    },
+    {
+      "key": "footerActions.footerAction2.buttonColor"
+    },
+    {
+      "key": "cardData"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "cardData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "expandCollapseEnabled": false,
+  "flexVerticalAlignment": "stretch",
+  "footerActions": {
+    "footerAction2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonVariant": "PRIMARY",
+      "id": "footerAction2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action 2",
+      "widgetId": ""
+    }
+  },
+  "hoverElevation": false,
+  "isCanvas": true,
+  "isClickable": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2sccm1u9uv",
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "mediaHeight": 140,
+  "mediaObjectFit": "cover",
+  "mediaPosition": "NONE",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "First menu item",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Second menu item",
+      "widgetId": ""
+    }
+  },
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 29,
+  "originalTopRow": 0,
+  "parentColumnSpace": 19.00201416015625,
+  "parentId": "vtil3lgqa3",
+  "parentRowSpace": 10,
+  "positioning": "fixed",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "selectedAccentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "selectionEnabled": false,
+  "shouldScrollContents": true,
+  "showFooter": false,
+  "showFooterDivider": true,
+  "showHeader": true,
+  "showHeaderDivider": true,
+  "showMenu": false,
+  "subtitle": "Identity Details",
+  "title": "Merchant Information\t",
+  "topRow": 0,
+  "type": "CARD_WIDGET",
+  "version": 1,
+  "widgetId": "l6g94mt0rl",
+  "widgetName": "Card1"
+}

@@ -24,7 +24,7 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('MerchantWorkbench', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('Work Place', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 1.4765625,
   "parentId": "furuoxrwwb",
   "parentRowSpace": 10,

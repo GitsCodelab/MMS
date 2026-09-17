@@ -34,10 +34,6 @@
       "isDefault": true
     },
     {
-      "id": "MerchantDetails",
-      "isDefault": false
-    },
-    {
       "id": "MakerNewMerchantRequest",
       "isDefault": false
     },
@@ -46,11 +42,7 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
-      "isDefault": false
-    },
-    {
-      "id": "MakerEditMerchantRequest Copy",
+      "id": "AddTerminal",
       "isDefault": false
     }
   ],

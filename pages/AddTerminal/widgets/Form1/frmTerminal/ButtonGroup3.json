@@ -1,0 +1,90 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "TERTIARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonyhrga5xney.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonyhrga5xney.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "add",
+      "id": "groupButton2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Add",
+      "menuItems": {},
+      "onClick": "{{\n\nJS_ADD_TERMINAL.isTerminalSectionEnabled();\nJS_GRID_TERMINAL.addTerminal();\n\n\n\n}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonyhrga5xney": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "refresh",
+      "id": "groupButtonyhrga5xney",
+      "index": 1,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Refresh",
+      "menuItems": {},
+      "onClick": "{{QRY_ADD_TERMINAL_LIST.run()}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "sjfbkzpt00"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "57v2yqfx51",
+  "leftColumn": 52,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "parentColumnSpace": 19.30859375,
+  "parentId": "w244vkzvra",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "621ux3wpua",
+  "widgetName": "ButtonGroup3"
+}

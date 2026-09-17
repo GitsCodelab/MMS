@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 49,
+  "bottomRow": 57,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  MMS_MERCHANT_REQUEST.data[0].BRANCH_CODE ))(iBranch.options, iBranch.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -57,7 +57,7 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_MMS_MAKER_BRANCH.data}}",
-  "topRow": 42,
+  "topRow": 50,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "n4ux6wf6t1",

@@ -1,0 +1,51 @@
+{
+  "allowedFileTypes": [],
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "#ffffff",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "t2e51zey9c",
+  "label": "Select Files",
+  "leftColumn": 58,
+  "maxFileSize": "15",
+  "maxNumFiles": "5",
+  "minWidth": 120,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onFilesSelected": "{{JS_Document.uploadAll();}}",
+  "parentColumnSpace": 18.39260768890381,
+  "parentId": "rj5y09vu10",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "selectedFiles": [],
+  "topRow": 0,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "pv43npiamw",
+  "widgetName": "ifiles"
+}

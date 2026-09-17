@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "select RM_ORACLE_CODE, RM_NAME  from MMS_RM"
+          "data": "select RM_ORACLE_CODE, RM_NAME, rawtohex(RM_ID)  RM_ID from MMS_RMS"
         },
         "preparedStatement": {
           "data": true

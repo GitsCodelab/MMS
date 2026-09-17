@@ -1,0 +1,77 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( qry_created_request.data[0].MERCHANT_ID))(iMerchant.options, iMerchant.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": "{{JS_ADD_TERMINAL.getPageMode() ==\"EDIT\"}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "oz3dfjp2v4",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Merchant",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Select Merchant",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{resetWidget(\"iMerchantContract\", true);\nstoreValue('selected_merchant_id', iMerchant.selectedOptionValue);\nQRY_Merchant_REQUEST.run()}}",
+  "optionLabel": "MERCHANT_NAME_EN",
+  "optionValue": "MERCHANT_ID",
+  "parentColumnSpace": 2.0390625,
+  "parentId": "xnwtiwjhcz",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Merchant",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "sourceData": "{{QRY_Merchant.data}}",
+  "topRow": 7,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "f59j0yctij",
+  "widgetName": "iMerchant"
+}

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 35,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  MMS_MERCHANT_REQUEST.data[0].TEAM_LEADER || null ))(iTeamLeader.options, iTeamLeader.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  MMS_MERCHANT_REQUEST.data[0].TEAM_LEADER_ID))(iTeamLeader.options, iTeamLeader.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -47,7 +47,7 @@
   "mobileTopRow": 43,
   "needsErrorInfo": false,
   "optionLabel": "RM_NAME",
-  "optionValue": "RM_ORACLE_CODE",
+  "optionValue": "RM_ID",
   "parentColumnSpace": 4.4296875,
   "parentId": "avhmwk9q7w",
   "parentRowSpace": 10,

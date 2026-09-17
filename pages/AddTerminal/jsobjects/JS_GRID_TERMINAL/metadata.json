@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6aa8fa5bd0a50c0c27281371_fbecb51c-0a64-4aaf-a6bb-b9ce236ef6d1",
+  "id": "AddTerminal_JS_GRID_TERMINAL",
+  "unpublishedCollection": {
+    "name": "JS_GRID_TERMINAL",
+    "pageId": "AddTerminal",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

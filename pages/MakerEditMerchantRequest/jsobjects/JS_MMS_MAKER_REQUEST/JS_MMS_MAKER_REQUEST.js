@@ -6,52 +6,96 @@ export default {
 
 	getRequestData: () => {
 		return {
-			contractSerial: iContractSerial.text,
-			
 
-			requestDate: MMS_MERCHANT_REQUEST.data?.[0]?.REQUEST_DATE || null,
+			contractSerial: iContractSerial.text,
+
+			requestDate:
+				MMS_MERCHANT_REQUEST.data?.[0]?.REQUEST_DATE || null,
 
 			cif: iCIF.text,
-			companyNameAr:iCompanyNameAR.text,
-			nationalId: String(iNationalID.text || ""),
 
-			ownerNameAr: iOwnerName.text,
+			companyNameAr: iCompanyNameAR.text,
 
-			companyName: iCompanyName.text,
+			nationalId:
+				String(iNationalID.text || ""),
 
-			merchantNameEn: iMerchantNameEN.text,
+			ownerNameAr:
+				iOwnerName.text,
 
-			merchantNameAr: iMerchantNameAR.text,
+			companyName:
+				iCompanyName.text,
 
-			contactNameAr: iContactName.text?.text || "",
+			merchantNameEn:
+				iMerchantNameEN.text,
 
-			mobilePrimary: iMobilePrumary.text,
+			merchantNameAr:
+				iMerchantNameAR.text,
 
-			addressEn: iAddressEN.text,
+			contactNameAr:
+				iContactName.text?.text || "",
 
-			addressAr: iAddressAR.text,
+			mobilePrimary:
+				iMobilePrumary.text,
 
-			city: iCity.text,
+			addressEn:
+				iAddressEN.text,
 
-			region: iRegion.text,
+			addressAr:
+				iAddressAR.text,
 
-			branchCode: iBranch.selectedOptionValue,
+			city:
+				iCity.text,
 
-			teamLeader: iTeamLeader.selectedOptionValue,
+			region:
+				iRegion.text,
 
-			rmOracleCode: iRM_Oracle_CODE.selectedOptionValue,
+			branchCode:
+				iBranch.selectedOptionValue,
 
-			bankAccount: iBankAccount.text,
+			/* ============================================================
+			   REQUEST-LEVEL ASSIGNMENTS
+			   ============================================================ */
 
-			mccId: iMCC.selectedOptionValue,
+			rmId:
+				iRM_Oracle_CODE.selectedOptionValue || "",
 
-			packageId: iPackage.selectedOptionValue,
-			contractMdr: iContractMDR.text? Number(iContractMDR.text): null,
-			contractMdrValue: iContractMDRValue.text? Number(iContractMDRValue.text): null,
+			teamLeaderId:
+				iTeamLeader.selectedOptionValue || "",
+
+			rmsOracleId:
+				iRM_Oracle_CODE.selectedOptionValue || "",
+
+			/* ============================================================
+			   COMMERCIAL
+			   ============================================================ */
+
+			bankAccount:
+				iBankAccount.text,
+
+			mccId:
+				iMCC.selectedOptionValue,
+
+			packageId:
+				iPackage.selectedOptionValue,
+
+			contractMdr:
+				iContractMDR.text
+					? Number(iContractMDR.text)
+					: null,
+
+			contractMdrValue:
+				iContractMDRValue.text
+					? Number(iContractMDRValue.text)
+					: null,
 
 			posCommission: null,
-			merchantComment:iMerchant_COMM.text
-			
+
+			/* ============================================================
+			   REQUEST COMMENT
+			   ============================================================ */
+
+			requestComment:
+				iMerchant_COMM.text || ""
 		};
 	}
-}
+};

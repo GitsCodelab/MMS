@@ -56,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "serverSideFiltering": false,
-  "sourceData": "{{QRY_mms_pos_condition.data}}",
+  "sourceData": "{{QRY_condition.data}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

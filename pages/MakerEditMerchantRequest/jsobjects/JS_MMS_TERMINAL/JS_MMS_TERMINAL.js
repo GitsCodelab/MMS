@@ -5,14 +5,14 @@ export default {
     },
 
     getTerminalId: () => {
-        return tblTerminals.triggeredRow?.TERMINAL_ID || "";
+        return tblTerminals.triggeredRow?.TERMINAL_ID ||tblTerminals.selectedRow?.TERMINAL_ID || "";
     },
 
     getTerminalData: () => {
         return {
-            posId: iPOSType.selectedOptionValue,
+            terminalTypeId:  Number( iPOSType.selectedOptionValue),
             posConditionId: iPOSCondition.selectedOptionValue,
-					mccId:iPOSMcc.selectedOptionValue,
+						mccId:iPOSMcc.selectedOptionValue,
         };
     },
 

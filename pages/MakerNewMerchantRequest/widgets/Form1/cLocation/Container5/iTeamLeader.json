@@ -44,7 +44,7 @@
   "mobileTopRow": 43,
   "needsErrorInfo": false,
   "optionLabel": "RM_NAME",
-  "optionValue": "RM_ORACLE_CODE",
+  "optionValue": "RM_ID",
   "parentColumnSpace": 4.4296875,
   "parentId": "osdh9d85wm",
   "parentRowSpace": 10,

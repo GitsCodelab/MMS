@@ -34,6 +34,9 @@
     },
     {
       "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemr7717xq9pi.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemvr2ue9zhxz.onClick"
     }
   ],
   "groupButtons": {
@@ -97,11 +100,13 @@
           "widgetId": "755raiq3jk"
         },
         "menuItemvr2ue9zhxz": {
+          "iconName": "add-row-top",
           "id": "menuItemvr2ue9zhxz",
           "index": 1,
           "isDisabled": false,
           "isVisible": true,
           "label": "New Terminal",
+          "onClick": "{{removeValue('MMS_ADD_TERMINAL_REQUEST_ID');\nnavigateTo('AddTerminal', {}, 'SAME_WINDOW');\n}}",
           "widgetId": "r1v6hr8oyr"
         }
       },

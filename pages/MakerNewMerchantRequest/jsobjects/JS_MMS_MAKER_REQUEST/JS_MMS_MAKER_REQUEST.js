@@ -16,55 +16,57 @@ export default {
 	},
 
 	getRequestData: () => {
-		return {
-			requestTypeId: 1,
+	return {
+		requestTypeId: 1,
 
-			contractSerial: iContractSerial.text,
-			requestDate: new Date().toISOString(),
+		contractSerial: iContractSerial.text,
+		requestDate: new Date().toISOString(),
 
-			cif: iCIF.text,
-			nationalId: String(iNationalID.text || ""),
+		cif: iCIF.text,
+		nationalId: String(iNationalID.text || ""),
 
-			ownerNameAr: iOwnerName.text,
+		ownerNameAr: iOwnerName.text,
 
-			companyName: iCompanyName.text,
-			companyNameAr: iCompanyNameAR.text,
+		companyName: iCompanyName.text,
+		companyNameAr: iCompanyNameAR.text,
 
-			merchantNameEn: iMerchantNameEN.text,
-			merchantNameAr: iMerchantNameAR.text,
+		merchantNameEn: iMerchantNameEN.text,
+		merchantNameAr: iMerchantNameAR.text,
 
-			contactNameAr: iContactName.text?.text || "",
-			mobilePrimary: iMobilePrumary.text,
+		contactNameAr: iContactName.text?.text || "",
+		mobilePrimary: iMobilePrumary.text,
 
-			addressEn: iAddressEN.text,
-			addressAr: iAddressAR.text,
+		addressEn: iAddressEN.text,
+		addressAr: iAddressAR.text,
 
-			city: iCity.text,
-			region: iRegion.text,
+		city: iCity.text,
+		region: iRegion.text,
 
-			branchCode: iBranch.selectedOptionValue,
-			teamLeader: iTeamLeader.selectedOptionValue,
-			rmOracleCode: iRM_Oracle_CODE.selectedOptionValue,
+		branchCode: iBranch.selectedOptionValue,
 
-			bankAccount: iBankAccount.text,
+		// Request-level assignments
+		rmId: iRM_Oracle_CODE.selectedOptionValue || "",
+		teamLeaderId: iTeamLeader.selectedOptionValue || "",
+		rmsOracleId: iRM_Oracle_CODE.selectedOptionValue || "",
 
-			mccId: iMCC.selectedOptionValue,
-			packageId: iPackage.selectedOptionValue,
+		bankAccount: iBankAccount.text,
 
-			contractMdr: iContractMDR.text
-				? Number(iContractMDR.text)
-				: null,
+		mccId: iMCC.selectedOptionValue,
+		packageId: iPackage.selectedOptionValue,
 
-			contractMdrValue: iContractMDRValue.text
-				? Number(iContractMDRValue.text)
-				: null,
+		contractMdr: iContractMDR.text
+			? Number(iContractMDR.text)
+			: null,
 
-			posCommission: null,
+		contractMdrValue: iContractMDRValue.text
+			? Number(iContractMDRValue.text)
+			: null,
 
-			merchantComment: iMerchant_COMM.text
-		};
-	},
+		posCommission: null,
 
+		requestComment: iMerchant_COMM.text || ""
+	};
+},
 	createRequest: async () => {
 
     try {
