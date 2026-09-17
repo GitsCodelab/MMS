@@ -2,7 +2,8 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 36,
+  "bottomRowBeforeCollapse": 36,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n  QRY_Merchant_REQUEST.data.find(\n    x => x.CONTRACT_SERIAL === JS_ADD_TERMINAL.getBaseContract()\n  )?.REQUEST_ID || \"\"\n))(iMerchantContract.options, iMerchantContract.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -19,7 +20,7 @@
       "key": "defaultOptionValue"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,6 +30,9 @@
     },
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -36,11 +40,11 @@
       "key": "onOptionChange"
     }
   ],
-  "isDisabled": "{{JS_ADD_TERMINAL.getPageMode() ==\"EDIT\"}}",
+  "isDisabled": "",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{JS_ADD_TERMINAL.getPageMode() ==\"NEW\"}}",
   "key": "oz3dfjp2v4",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -60,6 +64,8 @@
   "onOptionChange": "{{storeValue('selected_merchant_id', iMerchant.selectedOptionValue);}}",
   "optionLabel": "CONTRACT_SERIAL",
   "optionValue": "REQUEST_ID",
+  "originalBottomRow": 36,
+  "originalTopRow": 29,
   "parentColumnSpace": 2.0390625,
   "parentId": "xnwtiwjhcz",
   "parentRowSpace": 10,
@@ -69,7 +75,8 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_Merchant_REQUEST.data}}",
-  "topRow": 21,
+  "topRow": 29,
+  "topRowBeforeCollapse": 29,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "8s0a9jiwjb",

@@ -26,6 +26,6 @@
     "name": "initializeRequest",
     "pageId": "AddTerminal",
     "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

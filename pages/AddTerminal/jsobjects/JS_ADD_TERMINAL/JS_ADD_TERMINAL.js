@@ -175,7 +175,7 @@ export default {
 			// Load merchants / original contracts
 			//------------------------------------------------------
 			await QRY_Merchant_REQUEST.run();
-
+showAlert("loaded");
 
 			return {
 

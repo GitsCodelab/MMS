@@ -25,7 +25,7 @@
     "fullyQualifiedName": "JS_ADD_TERMINAL.getPageMode",
     "name": "getPageMode",
     "pageId": "AddTerminal",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

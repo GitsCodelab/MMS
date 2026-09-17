@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -40,7 +43,7 @@
   "rightColumn": 19,
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "Terminal Request",
+  "text": "{{JS_ADD_TERMINAL.getPageMode()}} - TERMINAL",
   "textAlign": "LEFT",
   "textColor": "#71717a",
   "topRow": 0,

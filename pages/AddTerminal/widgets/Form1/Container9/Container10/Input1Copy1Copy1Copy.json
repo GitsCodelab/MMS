@@ -1,13 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 29,
   "boxShadow": "none",
-  "closeOnSelection": true,
-  "dateFormat": "LL",
-  "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{qry_created_request.data[0].REQUEST_DATE}}",
+  "defaultText": "{{ qry_created_request.data[0].CONTRACT_SERIAL.replace(/-\\d+$/, \"\") }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,57 +14,53 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultDate"
+      "key": "defaultText"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "defaultDate"
-    },
-    {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
-  "firstDayOfWeek": 0,
-  "isDisabled": "{{JS_ADD_TERMINAL.getPageMode() ==\"EDIT\"}}",
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": true,
   "isLoading": false,
-  "isRequired": true,
-  "isVisible": true,
-  "key": "lwa0uop3fa",
-  "label": "Request Date",
+  "isRequired": false,
+  "isVisible": "{{JS_ADD_TERMINAL.getPageMode()==\"EDIT\"}}",
+  "key": "h8kz2pk5ty",
+  "label": "Orginal Contract No",
   "labelAlignment": "left",
   "labelPosition": "Top",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,
-  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 29,
+  "mobileBottomRow": 6,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 22,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 56,
-  "originalTopRow": 49,
   "parentColumnSpace": 2.0390625,
   "parentId": "xnwtiwjhcz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "shortcuts": false,
-  "timePrecision": "minute",
-  "topRow": 7,
-  "type": "DATE_PICKER_WIDGET2",
+  "showStepArrows": false,
+  "tooltip": "",
+  "topRow": 22,
+  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "cqos69u6ct",
-  "widgetName": "iRequestDate"
+  "widgetId": "4ux29qb4at",
+  "widgetName": "Input1Copy1Copy1Copy"
 }
