@@ -838,7 +838,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "tabOrder": 1,
-  "tableData": "{{ QRY_MMS_MERCHANT_WORKBENCH.data }}\n",
+  "tableData": "{{ QRY_WORKBENCH.data }}\n",
   "textSize": "0.875rem",
   "topRow": 0,
   "totalRecordsCount": 0,

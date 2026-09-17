@@ -5,7 +5,7 @@
   "borderWidth": "1",
   "bottomRow": 15,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{{\n  {\n    lifecycle: QRY_Home_Request_Lifecycle.data || []\n  }\n}}",
+  "defaultModel": "{{\n  {\n    lifecycle: QRY_Request_Lifecycle.data || []\n  }\n}}",
   "dynamicBindingPathList": [
     {
       "key": "theme"

@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6aa1537c1e2a7611c7cebc62_e4e7499c-ae10-46eb-ba1f-1380f3594643",
-  "id": "Work Place_QRY_Home_Request_Lifecycle",
+  "id": "Work Place_QRY_Request_Lifecycle",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -25,7 +25,7 @@
       "pluginId": "oracle-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "QRY_Home_Request_Lifecycle",
+    "name": "QRY_Request_Lifecycle",
     "pageId": "Work Place",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false

@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6a8c2e45ad890f2fc697683b_34c0f22a-e24a-4cef-963f-dc4dcfabd98b",
-  "id": "Work Place_QRY_MMS_MERCHANT_WORKBENCH",
+  "id": "Work Place_QRY_WORKBENCH",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -25,7 +25,7 @@
       "pluginId": "oracle-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "QRY_MMS_MERCHANT_WORKBENCH",
+    "name": "QRY_WORKBENCH",
     "pageId": "Work Place",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false

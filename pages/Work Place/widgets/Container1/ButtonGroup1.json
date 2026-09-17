@@ -69,7 +69,7 @@
       "itemType": "BUTTON",
       "label": "Refresh",
       "menuItems": {},
-      "onClick": "{{QRY_MMS_MERCHANT_WORKBENCH.run()}}",
+      "onClick": "{{QRY_WORKBENCH.run()}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "gu6tiqtto3"
