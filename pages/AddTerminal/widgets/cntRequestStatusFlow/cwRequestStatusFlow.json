@@ -5,7 +5,7 @@
   "borderWidth": "",
   "bottomRow": 10,
   "boxShadow": "none",
-  "defaultModel": "{{\n  {\n    currentStep:\n      Number(\n        QRY_Cur_Request_Status.data?.[0]?.FLOW_STATUS_STEP_NO ?? 0\n      )\n  }\n}}",
+  "defaultModel": "{{\n  {\n    currentStep:\n      Number(\n        Current_Status.data?.[0]?.FLOW_STATUS_STEP_NO ?? 0\n      )\n  }\n}}",
   "dynamicBindingPathList": [
     {
       "key": "theme"

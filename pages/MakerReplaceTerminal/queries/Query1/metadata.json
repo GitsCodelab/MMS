@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6aa8fa5bd0a50c0c27281371_3093d789-2f32-49fb-9008-b9f8aa640aec",
-  "id": "AddTerminal_CREATE_ADD_TERMINAL_REQUES",
+  "gitSyncId": "6aac32ea6bf00e3d1149abc6_ec687536-4fac-485f-badb-279892dd93e8",
+  "id": "MakerReplaceTerminal_Query1",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "DECLARE\n\n    V_JSON       CLOB;\n    V_REQUEST_ID RAW(16);\n\nBEGIN\n\n    V_REQUEST_ID :=\n        HEXTORAW(\n            '{{ JS_ADD_TERMINAL.getRequestId() }}'\n        );\n\n    V_JSON :=\n        '{{ JSON.stringify(\n            JS_ADD_TERMINAL.getRequestData()\n        ) }}';\n\n    TALY_BO_REP.MMS_ONBOARDING_PKG.CREATE_ADD_TERMINAL_REQUEST(\n        P_REQUEST_JSON => V_JSON,\n        P_REQUEST_ID   => V_REQUEST_ID\n    );\n\nEND;"
+          "data": "SELECT\n    RAWTOHEX(T.TERMINAL_ID) AS TERMINAL_ID,\n    RAWTOHEX(T.REQUEST_ID) AS REQUEST_ID,\n    T.TERMINAL_TYPE_ID,\n    T.STATUS,\n    T.IS_DELETED\nFROM TALY_BO_REP.MMS_TERMINAL T\nWHERE T.REQUEST_ID =\n      HEXTORAW('{{ JS_REPLACE_TERMINAL.getRequestId() }}');"
         },
         "preparedStatement": {
           "data": true
@@ -29,8 +29,8 @@
         "key": "formData.body.data"
       }
     ],
-    "name": "CREATE_ADD_TERMINAL_REQUES",
-    "pageId": "AddTerminal",
+    "name": "Query1",
+    "pageId": "MakerReplaceTerminal",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

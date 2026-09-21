@@ -57,7 +57,7 @@
   "mobileRightColumn": 13,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{resetWidget(\"iMerchantContract\", true);\nstoreValue('selected_merchant_id', iMerchant.selectedOptionValue);\nMerchant_Base_Requests.run();\nresetWidget(\"iOldTerminal\", true);\nLIVE_TERMINAL.run()}}",
+  "onOptionChange": "{{resetWidget(\"iMerchantContract\", true);\nstoreValue('selected_merchant_id', iMerchant.selectedOptionValue);\nBase_Requests.run();\nresetWidget(\"iOldTerminal\", true);\nLIVE_TERMINAL.run()}}",
   "optionLabel": "MERCHANT_NAME_EN",
   "optionValue": "MERCHANT_ID",
   "parentColumnSpace": 2.0390625,

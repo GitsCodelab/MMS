@@ -16,17 +16,15 @@ export default {
 	//--------------------------------------------------------------
 	// Page Mode
 	//
-	// NEW  = page opened without requestId
-	// EDIT = page opened with requestId
+	// NEW  = no request exists
+	// EDIT = request already exists
 	//--------------------------------------------------------------
 	getPageMode: () => {
 
-		const requestId =
-			appsmith.URL.queryParams.requestId || "";
-
-		return requestId
+		return JS_ADD_TERMINAL.getRequestId()
 			? "EDIT"
-			: "NEW";
+		: "NEW";
+
 	},
 
 
@@ -35,17 +33,15 @@ export default {
 	//--------------------------------------------------------------
 	getRequestStatus: () => {
 
-		return (
-			qry_created_request.data?.[0]?.STATUS_CODE ||
-			""
-		);
+		return (			qry_created_request.data?.[0].STATUS ||			""		);
+
 	},
 
 
 	//--------------------------------------------------------------
 	// Is Draft
 	//
-	// NEW page has no request yet, so it is treated as editable.
+	// NEW page has no request yet, so it is editable.
 	// Existing request is editable only when ST-DRAFT.
 	//--------------------------------------------------------------
 	isDraft: () => {
@@ -54,6 +50,7 @@ export default {
 			JS_ADD_TERMINAL.getPageMode() === "NEW" ||
 			JS_ADD_TERMINAL.getRequestStatus() === "ST-DRAFT"
 		);
+
 	},
 
 
@@ -123,13 +120,20 @@ export default {
 
 	//--------------------------------------------------------------
 	// Base / Original Contract
+	//
+	// Contract is read from the source/request data.
+	// This is informational only.
+	//
+	// Oracle remains responsible for generating the Add Terminal
+	// contract serial.
 	//--------------------------------------------------------------
 	getBaseContract: () => {
 
 		const contractSerial =
-			qry_created_request.data?.[0]?.CONTRACT_SERIAL || "";
+					qry_created_request.data?.[0]?.CONTRACT_SERIAL || "";
 
 		return contractSerial.replace(/-\d+$/, "");
+
 	},
 
 
@@ -139,12 +143,11 @@ export default {
 	initializeRequest: async () => {
 
 		const urlRequestId =
-			appsmith.URL.queryParams.requestId || "";
+					appsmith.URL.queryParams.requestId || "";
 
 
 		//----------------------------------------------------------
 		// EDIT MODE
-		// Existing Add Terminal request opened from Workplace
 		//----------------------------------------------------------
 		if (urlRequestId) {
 
@@ -156,6 +159,11 @@ export default {
 			await storeValue(
 				"MMS_ADD_TERMINAL_REQUEST_CREATED",
 				true
+			);
+
+			await storeValue(
+				"MMS_ADD_TERMINAL_PAGE_MODE",
+				"EDIT"
 			);
 
 
@@ -175,7 +183,7 @@ export default {
 			// Load merchants / original contracts
 			//------------------------------------------------------
 			await QRY_Merchant_REQUEST.run();
-showAlert("loaded");
+
 
 			return {
 
@@ -186,12 +194,12 @@ showAlert("loaded");
 				requestId: urlRequestId
 
 			};
+
 		}
 
 
 		//----------------------------------------------------------
 		// NEW MODE
-		// No request exists yet
 		//----------------------------------------------------------
 
 		await storeValue(
@@ -204,6 +212,11 @@ showAlert("loaded");
 			false
 		);
 
+		await storeValue(
+			"MMS_ADD_TERMINAL_PAGE_MODE",
+			"NEW"
+		);
+
 
 		return {
 
@@ -214,19 +227,23 @@ showAlert("loaded");
 			requestId: ""
 
 		};
+
 	},
 
 
 	//--------------------------------------------------------------
 	// Generate New REQUEST_ID
+	//
+	// Appsmith generates only the request identity.
+	// Oracle generates CONTRACT_SERIAL.
 	//--------------------------------------------------------------
 	generateRequestId: async () => {
 
 		const requestId =
-			crypto
-				.randomUUID()
-				.replace(/-/g, "")
-				.toUpperCase();
+					crypto
+		.randomUUID()
+		.replace(/-/g, "")
+		.toUpperCase();
 
 
 		await storeValue(
@@ -236,6 +253,7 @@ showAlert("loaded");
 
 
 		return requestId;
+
 	},
 
 
@@ -267,59 +285,70 @@ showAlert("loaded");
 
 	//--------------------------------------------------------------
 	// Request Data
+	//
+	// IMPORTANT:
+	// No contractSerial is sent.
+	//
+	// Oracle generates the Add Terminal contract serial.
 	//--------------------------------------------------------------
-	getCreateRequestData: () => {
+	getRequestData: () => {
 
 		return {
 
+			contractSerial:iContractSeriel.text,
 			merchantId:
-				JS_ADD_TERMINAL.getMerchantId(),
+			JS_ADD_TERMINAL.getMerchantId(),
 
 			sourceRequestId:
-				JS_ADD_TERMINAL.getSourceRequestId(),
+			JS_ADD_TERMINAL.getSourceRequestId(),
 
 			requestDate:
-				iRequestDate.selectedDate
-					? iRequestDate.selectedDate
-					: new Date().toISOString(),
+			iRequestDate.selectedDate
+			? iRequestDate.selectedDate
+			: new Date().toISOString(),
+
 
 			//------------------------------------------------------
 			// Request-level assignments
 			//------------------------------------------------------
 			rmId:
-				iRMS.selectedOptionValue || "",
+			iRMS.selectedOptionValue || "",
 
 			teamLeaderId:
-				iTeamLeader.selectedOptionValue || "",
+			iTeamLeader.selectedOptionValue || "",
 
 			rmsOracleId:
-				iRM_Oracle_CODE.selectedOptionValue || "",
+			iRM_Oracle_CODE.selectedOptionValue || "",
+
 
 			//------------------------------------------------------
 			// Maker
 			//------------------------------------------------------
 			makerId:
-				appsmith.user.username,
+			appsmith.user.username,
+
 
 			//------------------------------------------------------
 			// Request Comment
 			//------------------------------------------------------
 			requestComment:
-				iRequestComment.text || ""
+			iRequestComment.text || ""
+
 		};
+
 	},
 
 
 	//--------------------------------------------------------------
-	// Validate Save Draft
+	// Validate Save
 	//--------------------------------------------------------------
 	validateContinue: () => {
 
 		const merchantId =
-			JS_ADD_TERMINAL.getMerchantId();
+					JS_ADD_TERMINAL.getMerchantId();
 
 		const sourceRequestId =
-			JS_ADD_TERMINAL.getSourceRequestId();
+					JS_ADD_TERMINAL.getSourceRequestId();
 
 
 		//----------------------------------------------------------
@@ -333,6 +362,7 @@ showAlert("loaded");
 			);
 
 			return false;
+
 		}
 
 
@@ -347,6 +377,7 @@ showAlert("loaded");
 			);
 
 			return false;
+
 		}
 
 
@@ -361,6 +392,7 @@ showAlert("loaded");
 			);
 
 			return false;
+
 		}
 
 
@@ -372,18 +404,25 @@ showAlert("loaded");
 	//--------------------------------------------------------------
 	// Save Add Terminal Draft
 	//
+	// SINGLE ENTRY POINT
+	//
 	// NEW REQUEST:
-	//     Create request
+	//     Generate REQUEST_ID
+	//     SAVE_ADD_TERMINAL_REQUEST
+	//         -> CREATE_ADD_TERMINAL_REQUEST
 	//
 	// EXISTING REQUEST:
-	//     Update same draft
+	//     SAVE_ADD_TERMINAL_REQUEST
+	//         -> UPDATE_ADD_TERMINAL_DRAFT
+	//
+	// Oracle decides CREATE vs UPDATE.
 	//--------------------------------------------------------------
 	saveDraft: async () => {
 
 		try {
 
-			const requestId =
-				JS_ADD_TERMINAL.getRequestId();
+			let requestId =
+					JS_ADD_TERMINAL.getRequestId();
 
 
 			//------------------------------------------------------
@@ -412,11 +451,11 @@ showAlert("loaded");
 				//--------------------------------------------------
 				// Generate REQUEST_ID
 				//--------------------------------------------------
-				const newRequestId =
+				requestId =
 					await JS_ADD_TERMINAL.generateRequestId();
 
 
-				if (!newRequestId) {
+				if (!requestId) {
 
 					throw new Error(
 						"Request ID was not generated"
@@ -424,74 +463,67 @@ showAlert("loaded");
 
 				}
 
-
-				//--------------------------------------------------
-				// Create NEW_TERMINAL request
-				//--------------------------------------------------
-				await CREATE_ADD_TERMINAL_REQUES.run();
-
-
-				//--------------------------------------------------
-				// Mark request as created
-				//--------------------------------------------------
-				await storeValue(
-					"MMS_ADD_TERMINAL_REQUEST_CREATED",
-					true
-				);
-
-
-				//--------------------------------------------------
-				// Refresh request information
-				//--------------------------------------------------
-				await qry_created_request.run();
-
-
-				//--------------------------------------------------
-				// Refresh terminals
-				//--------------------------------------------------
-				await QRY_ADD_TERMINAL_LIST.run();
-
-
-				//--------------------------------------------------
-				// Reset terminal form
-				//--------------------------------------------------
-				resetWidget(
-					"frmTerminal"
-				);
-
-
-				//--------------------------------------------------
-				// Success
-				//--------------------------------------------------
-				showAlert(
-					"Add Terminal request saved as draft",
-					"success"
-				);
-
-
-				return {
-
-					success: true,
-
-					mode: "CREATE",
-
-					requestId:
-						newRequestId
-
-				};
-
 			}
 
 
 			//------------------------------------------------------
 			// EXISTING REQUEST
-			// Save changes to the same draft
+			//
+			// Validate only if request already exists.
 			//------------------------------------------------------
+			else {
+
+				if (
+					JS_ADD_TERMINAL.getRequestStatus() !==
+					"ST-DRAFT"
+				) {
+
+					showAlert(
+						"Only draft Add Terminal requests can be saved",
+						"warning"
+					);
+
+					return {
+
+						success: false,
+
+						validationFailed: true
+
+					};
+
+				}
+
+			}
+
 
 			//------------------------------------------------------
-			// Save changes
+			// SINGLE DATABASE SAVE ENTRY POINT
+			//
+			// New:
+			//     CREATE_ADD_TERMINAL_REQUEST
+			//
+			// Existing:
+			//     UPDATE_ADD_TERMINAL_DRAFT
 			//------------------------------------------------------
-			await QRY_UPDATE_ADD_TERMINAL_DRAFT.run();
+			await Save_request.run();
+
+
+			//------------------------------------------------------
+			// Mark request as created
+			//------------------------------------------------------
+			await storeValue(
+				"MMS_ADD_TERMINAL_REQUEST_CREATED",
+				true
+			);
+
+
+			//------------------------------------------------------
+			// Page becomes EDIT mode
+			//------------------------------------------------------
+			await storeValue(
+				"MMS_ADD_TERMINAL_PAGE_MODE",
+				"EDIT"
+			);
 
 
 			//------------------------------------------------------
@@ -507,10 +539,18 @@ showAlert("loaded");
 
 
 			//------------------------------------------------------
+			// Reset terminal form
+			//------------------------------------------------------
+			resetWidget(
+				"frmTerminal"
+			);
+
+
+			//------------------------------------------------------
 			// Success
 			//------------------------------------------------------
 			showAlert(
-				"Draft changes saved successfully",
+				"Add Terminal request saved as draft",
 				"success"
 			);
 
@@ -519,10 +559,7 @@ showAlert("loaded");
 
 				success: true,
 
-				mode: "UPDATE",
-
-				requestId:
-					requestId
+				requestId: requestId
 
 			};
 
@@ -536,10 +573,9 @@ showAlert("loaded");
 
 			//------------------------------------------------------
 			// IMPORTANT:
-			// Do NOT clear the existing request ID here.
+			// Do NOT clear REQUEST_ID.
 			//
-			// If UPDATE fails, the draft still exists.
-			// We must keep the request ID so the user can retry.
+			// The request may already exist in Oracle.
 			//------------------------------------------------------
 
 			showAlert(
@@ -554,8 +590,8 @@ showAlert("loaded");
 				success: false,
 
 				error:
-					error?.message ||
-					String(error)
+				error?.message ||
+				String(error)
 
 			};
 
@@ -583,11 +619,13 @@ showAlert("loaded");
 
 
 	//--------------------------------------------------------------
-	// Save Draft Button Visibility
+	// Save Button Visibility
+	//
+	// Save is available in both NEW and EDIT draft modes.
 	//--------------------------------------------------------------
 	isContinueVisible: () => {
 
-		return true;
+		return JS_ADD_TERMINAL.isDraft();
 
 	},
 
@@ -603,7 +641,7 @@ showAlert("loaded");
 			// Request ID
 			//------------------------------------------------------
 			const requestId =
-				JS_ADD_TERMINAL.getRequestId();
+						JS_ADD_TERMINAL.getRequestId();
 
 
 			if (!requestId) {
@@ -630,6 +668,53 @@ showAlert("loaded");
 			if (
 				appsmith.store.MMS_ADD_TERMINAL_REQUEST_CREATED
 				!== true
+			) {
+
+				showAlert(
+					"Please save the Add Terminal request first",
+					"warning"
+				);
+
+				return {
+
+					success: false,
+
+					validationFailed: true
+
+				};
+
+			}
+
+
+			//------------------------------------------------------
+			// Only ST-DRAFT can be submitted
+			//------------------------------------------------------
+			if (
+				JS_ADD_TERMINAL.getRequestStatus() !==
+				"ST-DRAFT"
+			) {
+
+				showAlert(
+					"Only draft Add Terminal requests can be submitted",
+					"warning"
+				);
+
+				return {
+
+					success: false,
+
+					validationFailed: true
+
+				};
+
+			}
+
+
+			//------------------------------------------------------
+			// Terminal section must be enabled
+			//------------------------------------------------------
+			if (
+				!JS_ADD_TERMINAL.isTerminalSectionEnabled()
 			) {
 
 				showAlert(
@@ -680,7 +765,7 @@ showAlert("loaded");
 				success: true,
 
 				requestId:
-					requestId
+				requestId
 
 			};
 
@@ -704,8 +789,8 @@ showAlert("loaded");
 				success: false,
 
 				error:
-					error?.message ||
-					String(error)
+				error?.message ||
+				String(error)
 
 			};
 

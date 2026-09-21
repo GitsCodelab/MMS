@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6aac32ea6bf00e3d1149abc6_49fd9b63-46a6-4667-89e5-a211ab467c51",
-  "id": "MakerReplaceTerminal_Merchant_Base_Requests",
+  "gitSyncId": "6aa8fa5bd0a50c0c27281371_6de4e3ad-75ff-48b6-9b02-561e53399348",
+  "id": "AddTerminal_Current_Status",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "/* Formatted on 9/15/2026 11:59:09 AM (QP5 v5.362) */\nSELECT r.CONTRACT_SERIAL,\n       s.STATUS_NAME,\n       r.REQUEST_DATE,\n       r.MAKER_ID,\n       r.REQUEST_COMMENT,REQUEST_TYPE_ID,\n\t\t\t RAWTOHEX(r.request_id)request_id \n  FROM MMS_ONBOARDING_REQUEST  r\n       JOIN MMS_REQUEST_STATUS s ON r.STATUS_ID = s.STATUS_ID\n       where  r.MERCHANT_ID=  {{iMerchant.selectedOptionValue}} and r.REQUEST_TYPE_ID = 1 "
+          "data": "SELECT\n    RAWTOHEX(r.REQUEST_ID) AS REQUEST_ID,\n    RAWTOHEX(r.STATUS_ID) AS STATUS_ID,\n    s.STATUS_CODE,\n    s.STATUS_NAME,\n    s.FLOW_STATUS_STEP_NO,\n    s.DESCRIPTION\nFROM TALY_BO_REP.MMS_ONBOARDING_REQUEST r\nJOIN TALY_BO_REP.MMS_REQUEST_STATUS s\n    ON s.STATUS_ID = r.STATUS_ID\nWHERE r.REQUEST_ID =\n    HEXTORAW(\n        REPLACE(\n            '{{JS_ADD_TERMINAL.getRequestId()}}',\n            '-',\n            ''\n        )\n    )"
         },
         "preparedStatement": {
           "data": true
@@ -29,8 +29,8 @@
         "key": "formData.body.data"
       }
     ],
-    "name": "Merchant_Base_Requests",
-    "pageId": "MakerReplaceTerminal",
+    "name": "Current_Status",
+    "pageId": "AddTerminal",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }

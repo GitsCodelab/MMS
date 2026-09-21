@@ -17,11 +17,7 @@
       "key": "groupButtons.groupButtonyhrga5xney.buttonColor"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "groupButtons.groupButton2.onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButtonyhrga5xney.onClick"
@@ -42,7 +38,7 @@
       "isVisible": true,
       "label": "Add",
       "menuItems": {},
-      "onClick": "{{\n\nJS_ADD_TERMINAL.isTerminalSectionEnabled();\nJS_GRID_TERMINAL.addTerminal();\n\n\n\n}}",
+      "onClick": "{{QRY_MCC.run();JS_ADD_TERMINAL.isTerminalSectionEnabled();\nJS_GRID_TERMINAL.addTerminal();}}",
       "placement": "CENTER",
       "widgetId": ""
     },

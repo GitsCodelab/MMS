@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 63,
+  "bottomRow": 51,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( qry_created_request.data[0].RM_ID))(iRMS.options, iRMS.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -17,16 +17,22 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": false,
+  "isDisabled": "{{JS_REPLACE_TERMINAL.getRequestStatus() !== \"ST-DRAFT\"}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
@@ -59,7 +65,7 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_RM.data}}",
-  "topRow": 56,
+  "topRow": 44,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "h3u1dtscwg",

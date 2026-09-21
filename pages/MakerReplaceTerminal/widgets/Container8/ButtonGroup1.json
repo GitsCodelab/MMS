@@ -68,7 +68,7 @@
       "itemType": "BUTTON",
       "label": "Submit",
       "menuItems": {},
-      "onClick": "{{ JS_REPLACE_TERMINAL.submitRequest() }}",
+      "onClick": "{{ JS_REPLACE_TERMINAL.submitRequest();\n\n Currrent_Status.run();}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "ii103phneo"

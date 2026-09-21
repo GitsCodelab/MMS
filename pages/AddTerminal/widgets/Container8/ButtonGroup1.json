@@ -26,9 +26,6 @@
     },
     {
       "key": "groupButtons.groupButton1.onClick"
-    },
-    {
-      "key": "groupButtons.groupButton3xp6yr2sw9.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -68,7 +65,7 @@
       "itemType": "BUTTON",
       "label": "Submit",
       "menuItems": {},
-      "onClick": "{{ JS_ADD_TERMINAL.submitRequest() }}",
+      "onClick": "{{JS_ADD_TERMINAL.submitRequest();\nCurrent_Status.run()}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "izmac5ms9z"

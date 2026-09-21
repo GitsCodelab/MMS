@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6aa8fa5bd0a50c0c27281371_bc9f7816-dcd0-49a5-ae2d-83d67efe653a",
-  "id": "AddTerminal_QRY_UPDATE_ADD_TERMINAL_DRAFT",
+  "id": "AddTerminal_Save_request",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "DECLARE\n    V_REQUEST_ID RAW(16);\n    V_JSON       CLOB;\nBEGIN\n\n    V_REQUEST_ID :=\n        HEXTORAW(\n            REPLACE(\n                '{{ JS_ADD_TERMINAL.getRequestId() }}',\n                '-',\n                ''\n            )\n        );\n\n    V_JSON :=\n        '{{ JSON.stringify(\n            JS_ADD_TERMINAL.getCreateRequestData()\n        ) }}';\n\n    TALY_BO_REP.MMS_ONBOARDING_PKG.UPDATE_ADD_TERMINAL_DRAFT(\n        P_REQUEST_ID  => V_REQUEST_ID,\n        P_REQUEST_JSON => V_JSON\n    );\n\nEND;"
+          "data": "DECLARE\n    V_REQUEST_ID RAW(16);\n    V_JSON       CLOB;\nBEGIN\n\n    V_REQUEST_ID :=\n        HEXTORAW(\n            REPLACE(\n                '{{ JS_ADD_TERMINAL.getRequestId() }}',\n                '-',\n                ''\n            )\n        );\n\n    V_JSON :=\n        '{{ JSON.stringify(\n            JS_ADD_TERMINAL.getRequestData()\n        ) }}';\n\n    TALY_BO_REP.MMS_ONBOARDING_PKG.SAVE_ADD_TERMINAL_REQUEST(\n        P_REQUEST_ID   => V_REQUEST_ID,\n        P_REQUEST_JSON => V_JSON\n    );\n\nEND;"
         },
         "preparedStatement": {
           "data": true
@@ -29,7 +29,7 @@
         "key": "formData.body.data"
       }
     ],
-    "name": "QRY_UPDATE_ADD_TERMINAL_DRAFT",
+    "name": "Save_request",
     "pageId": "AddTerminal",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

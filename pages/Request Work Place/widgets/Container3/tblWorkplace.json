@@ -58,11 +58,11 @@
     "CIF": 121,
     "CONTRACT_SERIAL": 159,
     "MERCHANT_NAME_EN": 216,
-    "REQUEST_DATE": 147,
+    "REQUEST_DATE": 190,
     "REQUEST_ID": 372,
-    "REQUEST_TYPE_NAME": 142,
+    "REQUEST_TYPE_NAME": 184,
     "RM_NAME": 169,
-    "STATUS": 105
+    "STATUS": 162
   },
   "compactMode": "SHORT",
   "customIsLoading": false,
@@ -140,6 +140,9 @@
     },
     {
       "key": "primaryColumns.STATUS.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.STATUS.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -449,7 +452,7 @@
       "label": "REQUEST_DATE",
       "notation": "standard",
       "originalId": "REQUEST_DATE",
-      "outputFormat": "DD/MM/YYYY HH:mm",
+      "outputFormat": "DD/MM/YYYY",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -702,7 +705,7 @@
       "allowSameOptionsInNewRow": true,
       "buttonLabel": "{{(() => { const tableData = tblWorkplace.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"STATUS\"])) : currentRow[\"STATUS\"] })()}}",
       "buttonVariant": "PRIMARY",
-      "cellBackground": "#FFFFFF",
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = tblWorkplace.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"STATUS\"])) : STATUS })()}}",
       "currencyCode": "USD",
@@ -726,7 +729,7 @@
       "notation": "standard",
       "originalId": "STATUS",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{tblWorkplace.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

@@ -58,7 +58,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "serverSideFiltering": false,
-  "sourceData": "{{QRY_MMS_MAKER_RM.data}}",
+  "sourceData": "{{QRY_MAKER_RM.data}}",
   "topRow": 43,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -5,10 +5,18 @@
   "boxShadow": "none",
   "buttonColor": "#d4d4d8",
   "buttonVariant": "TERTIARY",
-  "disabledWhenInvalid": false,
+  "disabledWhenInvalid": true,
   "dynamicBindingPathList": [
     {
       "key": "labelTextColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -19,7 +27,7 @@
   "iconAlign": "left",
   "iconName": "refresh",
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{JS_REPLACE_TERMINAL.getRequestStatus() !== \"ST-DRAFT\"}}",
   "isLoading": false,
   "isVisible": true,
   "key": "60b8snlqlk",

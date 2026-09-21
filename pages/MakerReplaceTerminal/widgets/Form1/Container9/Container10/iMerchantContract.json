@@ -2,10 +2,10 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 38,
+  "bottomRow": 30,
   "bottomRowBeforeCollapse": 36,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n  Merchant_Base_Requests.data.find(\n    x => x.CONTRACT_SERIAL === JS_REPLACE_TERMINAL.getBaseContract()\n  )?.REQUEST_ID || \"\"\n))(iMerchantContract.options, iMerchantContract.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n  Base_Requests.data.find(\n    x => x.CONTRACT_SERIAL === JS_REPLACE_TERMINAL.getBaseContract()\n  )?.REQUEST_ID || \"\"\n))(iMerchantContract.options, iMerchantContract.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -72,7 +72,7 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "shouldScrollContents": true,
-  "sourceData": "{{Merchant_Base_Requests.data}}",
+  "sourceData": "{{Base_Requests.data}}",
   "topRow": 23,
   "topRowBeforeCollapse": 29,
   "type": "SELECT_WIDGET",

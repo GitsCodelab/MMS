@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6aa8fa5bd0a50c0c27281371_3528bc85-b324-4e94-8353-e5616d956d75",
-  "id": "AddTerminal_JS_ADD_TERMINAL.initializeRequest",
+  "gitSyncId": "6aa8fa5bd0a50c0c27281371_75777242-bf74-4ae9-a56b-190bdc71f45e",
+  "id": "AddTerminal_JS_ADD_TERMINAL.getRequestData",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "JS_ADD_TERMINAL.initializeRequest",
-    "name": "initializeRequest",
+    "fullyQualifiedName": "JS_ADD_TERMINAL.getRequestData",
+    "name": "getRequestData",
     "pageId": "AddTerminal",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

@@ -56,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 33,
   "serverSideFiltering": false,
-  "sourceData": "{{QRY_MMS_MCC.data}}",
+  "sourceData": "{{QRY_MCC.data}}",
   "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,

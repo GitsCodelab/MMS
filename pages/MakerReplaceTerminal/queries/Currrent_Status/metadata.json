@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6aac32ea6bf00e3d1149abc6_262b0a0e-8694-4a0f-91c7-4f844e681af0",
-  "id": "MakerReplaceTerminal_QRY_Cur_Request_Status",
+  "id": "MakerReplaceTerminal_Currrent_Status",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
         "key": "formData.body.data"
       }
     ],
-    "name": "QRY_Cur_Request_Status",
+    "name": "Currrent_Status",
     "pageId": "MakerReplaceTerminal",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false

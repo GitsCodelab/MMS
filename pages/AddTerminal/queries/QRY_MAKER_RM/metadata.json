@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6aa8fa5bd0a50c0c27281371_8a7ee954-7cb7-47cb-bb03-756e51f5d119",
-  "id": "AddTerminal_QRY_MMS_MAKER_RM",
+  "id": "AddTerminal_QRY_MAKER_RM",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -25,7 +25,7 @@
       "pluginId": "oracle-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "QRY_MMS_MAKER_RM",
+    "name": "QRY_MAKER_RM",
     "pageId": "AddTerminal",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false

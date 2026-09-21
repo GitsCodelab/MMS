@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "/* Formatted on 9/21/2026 2:43:53 PM (QP5 v5.362) */\nDECLARE\n    V_REQUEST_ID   RAW (16);\nBEGIN\n    V_REQUEST_ID :=\n        HEXTORAW (REPLACE ('{{ JS_ADD_TERMINAL.getRequestId() }}', '-', ''));\n    TALY_BO_REP.MMS_ONBOARDING_PKG.SUBMIT_ADD_TERMINAL_REQUEST (\n        P_REQUEST_ID   => V_REQUEST_ID);\nEND"
+          "data": "DECLARE \n    V_REQUEST_ID RAW(16); \n    V_JSON       CLOB; \nBEGIN \n \n    V_REQUEST_ID := \n        HEXTORAW( \n            REPLACE( \n                '{{ JS_ADD_TERMINAL.getRequestId() }}', \n                '-', \n                '' \n            ) \n        ); \n \n    V_JSON := \n        '{{ JSON.stringify(\n            JS_ADD_TERMINAL.getRequestData()\n        ) }}';\n \n    TALY_BO_REP.MMS_ONBOARDING_PKG.UPDATE_REQUEST( \n        P_REQUEST_JSON => V_JSON, \n        P_REQUEST_ID   => V_REQUEST_ID, \n        P_ACTION       => 'SUBMIT' \n    ); \n \nEND;"
         },
         "preparedStatement": {
           "data": true

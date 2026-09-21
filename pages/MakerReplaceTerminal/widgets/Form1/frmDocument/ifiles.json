@@ -5,10 +5,17 @@
   "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "#ffffff",
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicPropertyPathList": [
     {
       "key": "onFilesSelected"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -20,7 +27,7 @@
   "fileDataType": "Base64",
   "files": [],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{JS_REPLACE_TERMINAL.getRequestStatus() !== \"ST-DRAFT\"}}",
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,

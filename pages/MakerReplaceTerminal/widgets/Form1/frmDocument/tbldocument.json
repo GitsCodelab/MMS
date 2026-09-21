@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 44,
+  "bottomRow": 32,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": false,
@@ -113,11 +113,17 @@
     },
     {
       "key": "primaryColumns.customColumn1.menuColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -153,8 +159,8 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 32,
-  "originalTopRow": 5,
+  "originalBottomRow": 44,
+  "originalTopRow": 17,
   "parentColumnSpace": 6.7079010009765625,
   "parentId": "8oo2r7oo38",
   "parentRowSpace": 10,
@@ -557,7 +563,7 @@
       "isCellVisible": true,
       "isCompact": false,
       "isDerived": true,
-      "isDisabled": false,
+      "isDisabled": "{{(() => { const tableData = tbldocument.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (JS_REPLACE_TERMINAL.getRequestStatus() !== \"ST-DRAFT\")) : JS_REPLACE_TERMINAL.getRequestStatus() !== \"ST-DRAFT\" })()}}",
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
@@ -616,7 +622,7 @@
   "searchKey": "",
   "tableData": "{{QRY_Documents.data}}",
   "textSize": "0.875rem",
-  "topRow": 17,
+  "topRow": 5,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
