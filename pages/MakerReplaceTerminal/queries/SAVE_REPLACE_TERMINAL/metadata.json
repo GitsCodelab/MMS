@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "DECLARE\n    V_JSON CLOB :=\n        {{ JSON.stringify(\n            JS_REPLACE_TERMINAL.getCreateRequestData()\n        ) }};\n\n    V_REQUEST_ID RAW(16) :=\n        HEXTORAW(\n            '{{ JS_REPLACE_TERMINAL.getRequestId() }}'\n        );\n\nBEGIN\n    TALY_BO_REP.MMS_ONBOARDING_PKG.SAVE_REPLACE_TERMINAL_REQUEST(\n        P_REQUEST_JSON => V_JSON,\n        P_REQUEST_ID   => V_REQUEST_ID\n    );\nEND;"
+          "data": "DECLARE\n    V_JSON CLOB :=\n        {{ JSON.stringify(\n            JS_PAGE.getCreateRequestData()\n        ) }};\n\n    V_REQUEST_ID RAW(16) :=\n        HEXTORAW(\n            '{{ JS_PAGE.getRequestId() }}'\n        );\n\nBEGIN\n    TALY_BO_REP.MMS_ONBOARDING_PKG.SAVE_REPLACE_TERMINAL_REQUEST(\n        P_REQUEST_JSON => V_JSON,\n        P_REQUEST_ID   => V_REQUEST_ID\n    );\nEND;"
         },
         "preparedStatement": {
           "data": true

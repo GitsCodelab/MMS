@@ -53,7 +53,7 @@
   "mobileRightColumn": 19.999999999999996,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{ JS_Document.setOCRPage() }}",
+  "onOptionChange": "{{ JS_DOC.setOCRPage() }}",
   "optionLabel": "PAGE_NUMBER",
   "optionValue": "OCR_PAGE_ID",
   "parentColumnSpace": 14.040917968750001,

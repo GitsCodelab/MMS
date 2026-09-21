@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 53,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{ JS_Document.getOCRTextHTML() }}",
+  "defaultText": "{{ JS_DOC.getOCRTextHTML() }}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"

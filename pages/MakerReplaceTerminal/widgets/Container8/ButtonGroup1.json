@@ -51,7 +51,7 @@
       "isVisible": true,
       "label": "Save",
       "menuItems": {},
-      "onClick": "{{ JS_REPLACE_TERMINAL.saveDraft() }}",
+      "onClick": "{{ JS_PAGE.saveDraft() }}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -64,11 +64,11 @@
       "index": 1,
       "isDisabled": false,
       "isSeparator": false,
-      "isVisible": "{{JS_REPLACE_TERMINAL.canSubmit()}}",
+      "isVisible": "{{JS_PAGE.canSubmit()}}",
       "itemType": "BUTTON",
       "label": "Submit",
       "menuItems": {},
-      "onClick": "{{ JS_REPLACE_TERMINAL.submitRequest();\n\n Currrent_Status.run();}}",
+      "onClick": "{{ JS_PAGE.submitRequest();\n\n Currrent_Status.run();}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "ii103phneo"

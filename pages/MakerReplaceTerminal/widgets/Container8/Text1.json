@@ -43,7 +43,7 @@
   "rightColumn": 19,
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{JS_REPLACE_TERMINAL.getPageMode()}} - TERMINAL REPLACEMENT",
+  "text": "{{JS_PAGE.getPageMode()}} - TERMINAL REPLACEMENT",
   "textAlign": "LEFT",
   "textColor": "#71717a",
   "topRow": 0,

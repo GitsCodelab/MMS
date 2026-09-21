@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "SELECT\n    RAWTOHEX(r.REQUEST_ID) AS REQUEST_ID,\n    RAWTOHEX(r.STATUS_ID) AS STATUS_ID,\n    s.STATUS_CODE,\n    s.STATUS_NAME,\n    s.FLOW_STATUS_STEP_NO,\n    s.DESCRIPTION\nFROM TALY_BO_REP.MMS_ONBOARDING_REQUEST r\nJOIN TALY_BO_REP.MMS_REQUEST_STATUS s\n    ON s.STATUS_ID = r.STATUS_ID\nWHERE r.REQUEST_ID =\n    HEXTORAW(\n        REPLACE(\n            '{{JS_REPLACE_TERMINAL.getRequestId()}}',\n            '-',\n            ''\n        )\n    )"
+          "data": "SELECT\n    RAWTOHEX(r.REQUEST_ID) AS REQUEST_ID,\n    RAWTOHEX(r.STATUS_ID) AS STATUS_ID,\n    s.STATUS_CODE,\n    s.STATUS_NAME,\n    s.FLOW_STATUS_STEP_NO,\n    s.DESCRIPTION\nFROM TALY_BO_REP.MMS_ONBOARDING_REQUEST r\nJOIN TALY_BO_REP.MMS_REQUEST_STATUS s\n    ON s.STATUS_ID = r.STATUS_ID\nWHERE r.REQUEST_ID =\n    HEXTORAW(\n        REPLACE(\n            '{{JS_PAGE.getRequestId()}}',\n            '-',\n            ''\n        )\n    )"
         },
         "preparedStatement": {
           "data": true

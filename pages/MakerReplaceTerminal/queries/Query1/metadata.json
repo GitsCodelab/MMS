@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "SELECT\n    RAWTOHEX(T.TERMINAL_ID) AS TERMINAL_ID,\n    RAWTOHEX(T.REQUEST_ID) AS REQUEST_ID,\n    T.TERMINAL_TYPE_ID,\n    T.STATUS,\n    T.IS_DELETED\nFROM TALY_BO_REP.MMS_TERMINAL T\nWHERE T.REQUEST_ID =\n      HEXTORAW('{{ JS_REPLACE_TERMINAL.getRequestId() }}');"
+          "data": "SELECT\n    RAWTOHEX(T.TERMINAL_ID) AS TERMINAL_ID,\n    RAWTOHEX(T.REQUEST_ID) AS REQUEST_ID,\n    T.TERMINAL_TYPE_ID,\n    T.STATUS,\n    T.IS_DELETED\nFROM TALY_BO_REP.MMS_TERMINAL T\nWHERE T.REQUEST_ID =\n      HEXTORAW('{{ JS_PAGE.getRequestId() }}');"
         },
         "preparedStatement": {
           "data": true

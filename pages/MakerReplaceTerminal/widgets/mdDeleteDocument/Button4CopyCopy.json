@@ -33,7 +33,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{JS_Document.deleteDocument();}}",
+  "onClick": "{{JS_DOC.deleteDocument();}}",
   "originalBottomRow": 18,
   "originalTopRow": 14,
   "parentId": "sszgudpiw5",
