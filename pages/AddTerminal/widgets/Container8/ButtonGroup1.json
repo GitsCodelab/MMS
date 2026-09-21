@@ -26,6 +26,9 @@
     },
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3xp6yr2sw9.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -61,7 +64,7 @@
       "index": 1,
       "isDisabled": false,
       "isSeparator": false,
-      "isVisible": "{{ JS_ADD_TERMINAL.isTerminalSectionEnabled() }}",
+      "isVisible": "{{ JS_ADD_TERMINAL.getPageMode() ===\"EDIT\" }}",
       "itemType": "BUTTON",
       "label": "Submit",
       "menuItems": {},

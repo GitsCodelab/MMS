@@ -1,0 +1,60 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35,
+  "boxShadow": "none",
+  "defaultText": "{{ QRY_Selected_Merchant.data?.[0]?.COMPANY_NAME}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "qrffvazvpm",
+  "label": "Company Name ENG",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 56,
+  "originalTopRow": 49,
+  "parentColumnSpace": 2.3203125,
+  "parentId": "vkxhddnvxz",
+  "parentRowSpace": 10,
+  "placeholderText": "Company Name",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "showStepArrows": false,
+  "topRow": 28,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "w7w33q87ze",
+  "widgetName": "iCompanyName"
+}

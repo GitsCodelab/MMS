@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6aac32ea6bf00e3d1149abc6_4e953a67-b168-4c4c-bd2b-81b7da686483",
+  "id": "MerchantDetails_JS_MMS_TERMINAL",
+  "unpublishedCollection": {
+    "name": "JS_MMS_TERMINAL",
+    "pageId": "MerchantDetails",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
