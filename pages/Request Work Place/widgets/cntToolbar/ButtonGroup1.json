@@ -26,6 +26,12 @@
     },
     {
       "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemzhuc39vfjx.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemnetof25ndc.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItem42r8pd9lmg.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -46,6 +52,9 @@
     },
     {
       "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemnetof25ndc.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItem42r8pd9lmg.onClick"
     }
   ],
   "groupButtons": {
@@ -97,6 +106,16 @@
       "itemType": "BUTTON",
       "label": "New",
       "menuItems": {
+        "menuItem42r8pd9lmg": {
+          "iconName": "user",
+          "id": "menuItem42r8pd9lmg",
+          "index": 4,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "New Termination (Merch.)",
+          "onClick": "{{removeValue('MMS_REPLACE_TERMINAL_REQUEST_ID');\nstoreValue('MMS_REPLACE_TERMINAL_PAGE_MODE', 'NEW');\nnavigateTo('MakerTerminateMerchant', {}, 'SAME_WINDOW');}}",
+          "widgetId": "oo2gsi0ogi"
+        },
         "menuItemnetof25ndc": {
           "iconName": "ban-circle",
           "id": "menuItemnetof25ndc",

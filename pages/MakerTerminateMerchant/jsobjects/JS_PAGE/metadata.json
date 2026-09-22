@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6ab274141a19c392027b8d53_b1f0673c-280f-4a0e-b45d-003141910a01",
+  "id": "MakerTerminateMerchant_JS_PAGE",
+  "unpublishedCollection": {
+    "name": "JS_PAGE",
+    "pageId": "MakerTerminateMerchant",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

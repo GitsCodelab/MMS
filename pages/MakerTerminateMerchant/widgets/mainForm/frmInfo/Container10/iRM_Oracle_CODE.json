@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 58,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( qry_created_request.data[0].RMS_ORACLE_ID))(iRM_Oracle_CODE.options, iRM_Oracle_CODE.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": "{{JS_PAGE.getRequestStatus() !== \"ST-DRAFT\"}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "luadnyfnft",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "RM Oracle CODE",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 43,
+  "needsErrorInfo": false,
+  "optionLabel": "RM_ORACLE_CODE",
+  "optionValue": "RM_ID",
+  "originalBottomRow": 58,
+  "originalTopRow": 51,
+  "parentColumnSpace": 2.0390625,
+  "parentId": "w73vlfpqqa",
+  "parentRowSpace": 10,
+  "placeholderText": "Select RM Oracle CODE",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "sourceData": "{{QRY_RM.data}}",
+  "topRow": 51,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "i42mmpmvi8",
+  "widgetName": "iRM_Oracle_CODE"
+}

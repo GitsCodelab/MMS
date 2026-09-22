@@ -60,6 +60,10 @@
     {
       "id": "MakerTerminateTerminal",
       "isDefault": false
+    },
+    {
+      "id": "MakerTerminateMerchant",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

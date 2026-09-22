@@ -92,10 +92,15 @@ export default {
 
 			case 5:
 
-				showAlert(
-					"Terminate Merchant is not implemented yet",
-					"info"
+
+	navigateTo(
+					"MakerTerminateMerchant",
+					{
+						requestId: requestId
+					},
+					"SAME_WINDOW"
 				);
+
 
 				break;
 
