@@ -1,0 +1,82 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "bottomRowBeforeCollapse": 36,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n  Base_Requests.data.find(\n    x => x.CONTRACT_SERIAL === JS_PAGE.getBaseContract()\n  )?.REQUEST_ID || \"\"\n))(iMerchantContract.options, iMerchantContract.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": "{{JS_PAGE.canSubmit()}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "oz3dfjp2v4",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Merchant Contract No",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Select Merchant Contract Number",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{storeValue('selected_merchant_id', iMerchant.selectedOptionValue);}}",
+  "optionLabel": "CONTRACT_SERIAL",
+  "optionValue": "REQUEST_ID",
+  "originalBottomRow": 30,
+  "originalTopRow": 23,
+  "parentColumnSpace": 2.0390625,
+  "parentId": "coqdh99ll4",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{Base_Requests.data}}",
+  "topRow": 23,
+  "topRowBeforeCollapse": 29,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "jzo48xkw3t",
+  "widgetName": "iMerchantContract"
+}

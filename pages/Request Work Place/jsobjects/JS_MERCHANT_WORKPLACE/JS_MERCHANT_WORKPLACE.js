@@ -80,9 +80,12 @@ export default {
 
 			case 4:
 
-				showAlert(
-					"Terminate Terminal is not implemented yet",
-					"info"
+				navigateTo(
+					"MakerTerminateTerminal",
+					{
+						requestId: requestId
+					},
+					"SAME_WINDOW"
 				);
 
 				break;
