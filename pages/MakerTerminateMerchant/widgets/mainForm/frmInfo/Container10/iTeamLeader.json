@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 44,
+  "bottomRow": 37,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( qry_created_request.data[0].TEAM_LEADER_ID))(iTeamLeader.options, iTeamLeader.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -65,7 +65,7 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{QRY_RM.data}}",
-  "topRow": 37,
+  "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "1v0ax9viel",
