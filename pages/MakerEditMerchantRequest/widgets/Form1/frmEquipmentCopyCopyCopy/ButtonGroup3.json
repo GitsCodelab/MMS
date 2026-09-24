@@ -37,7 +37,7 @@
       "isVisible": true,
       "label": "Add",
       "menuItems": {},
-      "onClick": "{{JS_MMS_TERMINAL.addTerminal();}}",
+      "onClick": "{{JS_TERMINAL.addTerminal();}}",
       "placement": "CENTER",
       "widgetId": ""
     },

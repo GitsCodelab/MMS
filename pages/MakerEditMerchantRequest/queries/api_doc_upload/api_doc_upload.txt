@@ -1,5 +1,5 @@
 {
-  "requestId": "{{JS_MMS_MAKER_REQUEST.getRequestId()}}",
+  "requestId": "{{JS_PAGE.getRequestId()}}",
   "documentType": "CR",
   "uploadedBy": "{{appsmith.user.username}}",
 	"originalFileName":"{{files.files[0].name}}",

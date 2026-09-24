@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6a93dee5abcbd7b05811cdf7_de694fef-5b9a-45d4-bde2-1124d4493f8c",
+  "id": "MakerEditMerchantRequest_JS_PAGE",
+  "unpublishedCollection": {
+    "name": "JS_PAGE",
+    "pageId": "MakerEditMerchantRequest",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

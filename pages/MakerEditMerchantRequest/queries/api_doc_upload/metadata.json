@@ -11,7 +11,7 @@
           "value": "multipart/form-data"
         }
       ],
-      "body": "{\n  \"requestId\": \"{{JS_MMS_MAKER_REQUEST.getRequestId()}}\",\n  \"documentType\": \"CR\",\n  \"uploadedBy\": \"{{appsmith.user.username}}\",\n\t\"originalFileName\":\"{{files.files[0].name}}\",\n\t\"mimeType\":\"{{files.files[0].type}}\",\n\t\"filesize\":\"{{files.files[0].data.length}}\",\n\t\"storedFileName\":{{files.files[0].name}},\n\t\"file\":\"{{files.files[0].data}}\"\n}",
+      "body": "{\n  \"requestId\": \"{{JS_PAGE.getRequestId()}}\",\n  \"documentType\": \"CR\",\n  \"uploadedBy\": \"{{appsmith.user.username}}\",\n\t\"originalFileName\":\"{{files.files[0].name}}\",\n\t\"mimeType\":\"{{files.files[0].type}}\",\n\t\"filesize\":\"{{files.files[0].data.length}}\",\n\t\"storedFileName\":{{files.files[0].name}},\n\t\"file\":\"{{files.files[0].data}}\"\n}",
       "bodyFormData": [
         {
           "key": "file",

@@ -15,11 +15,23 @@
     },
     {
       "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton1.isVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton2.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -39,10 +51,10 @@
       "id": "groupButton1",
       "index": 0,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": "{{JS_PAGE.isDraft()}}",
       "label": "Save",
       "menuItems": {},
-      "onClick": "{{\nawait storeValue(\"MMS_SAVING\", true);\nUPD_MMS_UPDATE_REQUEST.run().then(() => {\n  MMS_MERCHANT_REQUEST.run();\n  showAlert('Saved as draft', 'success');\n}).catch(() => {\n  showAlert('Fail to save', 'error');\n});}}",
+      "onClick": "{{\nawait storeValue(\"MMS_SAVING\", true);\nUPDATE_REQUEST.run().then(() => {\n  MMS_MERCHANT_REQUEST.run();\n  showAlert('Saved as draft', 'success');\n}).catch(() => {\n  showAlert('Fail to save', 'error');\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -54,10 +66,10 @@
       "id": "groupButton2",
       "index": 1,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": "{{JS_PAGE.canSubmit()}}",
       "label": "Submit",
       "menuItems": {},
-      "onClick": "{{\nshowModal(md_submit_confirm.name).then(() => {\n  UPD_MMS_SUBMIT_REQUEST.run().then(() => {\n    showAlert('success');\n  }).catch(() => {\n    showAlert('failure');\n  });\n}).catch(() => {\n  showAlert('Failure', 'error');\n});}}",
+      "onClick": "{{showModal(mdSubmitConfirm.name);}}",
       "placement": "START",
       "widgetId": ""
     }

@@ -144,7 +144,7 @@
   "needsErrorInfo": false,
   "onRowSelected": "",
   "originalBottomRow": 29,
-  "originalTopRow": 4,
+  "originalTopRow": 5,
   "parentColumnSpace": 6.7079010009765625,
   "parentId": "r1fakrhxtw",
   "parentRowSpace": 10,
@@ -428,7 +428,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Delete",
-          "onClick": "{{JS_MMS_TERMINAL.deleteTerminal();}}",
+          "onClick": "{{JS_TERMINAL.deleteTerminal();}}",
           "widgetId": "cf7eoboizn"
         },
         "menuItempullutgr94": {
@@ -438,7 +438,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Edit",
-          "onClick": "{{JS_MMS_TERMINAL.editTerminal();}}",
+          "onClick": "{{JS_TERMINAL.editTerminal();}}",
           "widgetId": "wa8b3ps0i6"
         }
       },
