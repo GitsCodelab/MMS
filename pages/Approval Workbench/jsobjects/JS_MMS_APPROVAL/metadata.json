@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6ab76292f9ab13fe5f84932f_563afb21-fbb1-4222-b3c7-0d9bc5d6499c",
+  "id": "Approval Workbench_JS_MMS_APPROVAL",
+  "unpublishedCollection": {
+    "name": "JS_MMS_APPROVAL",
+    "pageId": "Approval Workbench",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
