@@ -31,7 +31,7 @@
   "pages": [
     {
       "id": "Request Work Place",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "MakerNewMerchantRequest",
@@ -67,7 +67,7 @@
     },
     {
       "id": "Approval Workbench",
-      "isDefault": false
+      "isDefault": true
     }
   ],
   "unpublishedAppLayout": {
