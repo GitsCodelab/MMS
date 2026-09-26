@@ -1,0 +1,47 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "InputDecisionCommentKey",
+  "label": "Comment",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Comment",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 4,
+  "minWidth": 450,
+  "parentId": "mdCanvas",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "topRow": 15,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "InputDecisionComment",
+  "widgetName": "InputDecisionComment",
+  "resetOnSubmit": true,
+  "showStepArrows": false,
+  "placeholderText": "Enter Comment"
+}
