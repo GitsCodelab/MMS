@@ -17,14 +17,11 @@
       "leftColumn": 0,
       "minHeight": 100,
       "minWidth": 450,
-      "parentId": "cntTableCanvas",
       "renderMode": "CANVAS",
       "rightColumn": 64,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
-      "version": 1,
-      "widgetId": "cntTableCanvas",
-      "widgetName": "cntTableCanvas"
+      "version": 1
     }
   ],
   "containerStyle": "card",
@@ -51,7 +48,5 @@
   "rightColumn": 64,
   "topRow": 14,
   "type": "CONTAINER_WIDGET",
-  "version": 1,
-  "widgetId": "cntTable",
-  "widgetName": "cntTable"
+  "version": 1
 }
