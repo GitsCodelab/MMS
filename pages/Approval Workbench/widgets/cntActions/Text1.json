@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
-  "bottomRow": 4,
+  "bottomRow": 8,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -12,42 +11,42 @@
     },
     {
       "key": "borderRadius"
-    }
+    },
+    {
+      "key": "text"
+    } 
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "7k33msqydo",
+  "key": "vv7zpo84k3",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 4,
+  "mobileBottomRow": 8,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 5,
-  "mobileTopRow": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 4,
-  "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 4.4296875,
-  "parentId": "wr07tbxo50",
+  "parentColumnSpace": 20.25,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 12,
+  "rightColumn": 14,
   "shouldTruncate": false,
-  "text": "Merchant Work Place",
+  "text": "Hello {{appsmith.user.name || appsmith.user.email}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "geczngluwo",
-  "widgetName": "Text4"
+  "widgetId": "h6mstpwg4c",
+  "widgetName": "Text1"
 }

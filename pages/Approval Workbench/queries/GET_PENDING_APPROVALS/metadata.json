@@ -27,7 +27,7 @@
     "dynamicBindingPathList": [],
     "name": "GET_PENDING_APPROVALS",
     "pageId": "Approval Workbench",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
