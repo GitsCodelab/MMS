@@ -64,6 +64,10 @@
     {
       "id": "MakerTerminateMerchant",
       "isDefault": false
+    },
+    {
+      "id": "ApprovalWorkbench",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
