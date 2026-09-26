@@ -14,7 +14,7 @@
     },
     {
       "key": "text"
-    }
+    } 
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
