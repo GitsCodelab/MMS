@@ -1,0 +1,78 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "TERTIARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButtonfctxj7sdo4.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton8ozruvgflg.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemzhuc39vfjx.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItemnetof25ndc.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtono0zrwxp6r3.menuItems.menuItem42r8pd9lmg.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonfctxj7sdo4.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButtonfctxj7sdo4": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "refresh",
+      "id": "groupButtonfctxj7sdo4",
+      "index": 0,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Refresh",
+      "menuItems": {},
+      "onClick": "{{PENDING_APPROVALS.run()}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "gu6tiqtto3"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "7w1qbst1as",
+  "leftColumn": 57,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "parentColumnSpace": 4.4296875,
+  "parentId": "hb5trpk9y6",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "otsdoejog6",
+  "widgetName": "ButtonGroup1"
+}

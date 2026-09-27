@@ -32,6 +32,7 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
     "CYCLE_NO",
     "QUEUE_NAME",
     "CIF",
@@ -47,15 +48,15 @@
     "REQUEST_ID",
     "QUEUE_CODE",
     "REQUEST_TYPE_ID",
-    "MERCHANT_ID",
-    "customColumn1"
+    "MERCHANT_ID"
   ],
-  "columnUpdatedAt": 1790507772152,
+  "columnUpdatedAt": 1790515689185,
   "columnWidthMap": {
     "ACTIVITY_STATUS": 157,
     "CIF": 106,
     "CYCLE_NO": 115,
-    "REQUEST_STATUS": 175
+    "REQUEST_STATUS": 175,
+    "customColumn1": 83
   },
   "compactMode": "SHORT",
   "customIsLoading": false,
@@ -134,9 +135,28 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItems4tbp2kvc2.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem47442jtlnb.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemg5bab45okx.onClick"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItems4tbp2kvc2.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItem47442jtlnb.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemg5bab45okx.onClick"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -688,31 +708,38 @@
       "menuColor": "{{tblApproval.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "menuItems": {
         "menuItem47442jtlnb": {
+          "iconName": "delete",
           "id": "menuItem47442jtlnb",
           "index": 1,
           "isDisabled": false,
           "isVisible": true,
           "label": "Reject",
+          "onClick": "{{storeValue('confirmAction', 'REJECTED');\nJS_PAGE.confirmActionMsg();\n}}",
           "widgetId": "0woec324zz"
         },
         "menuItemg5bab45okx": {
+          "iconName": "info-sign",
           "id": "menuItemg5bab45okx",
           "index": 2,
           "isDisabled": false,
           "isVisible": true,
           "label": "Push back",
+          "onClick": "{{storeValue('confirmAction', 'PUSHED_BACK');\nJS_PAGE.confirmActionMsg();\n}}",
           "widgetId": "znpqht6yoq"
         },
         "menuItems4tbp2kvc2": {
+          "iconName": "automatic-updates",
           "id": "menuItems4tbp2kvc2",
           "index": 0,
           "isDisabled": false,
           "isVisible": true,
           "label": "Approve",
+          "onClick": "{{storeValue('confirmAction', 'APPROVED');\n\nJS_PAGE.confirmActionMsg();\n}}",
           "widgetId": "tl57bo40xl"
         }
       },
       "menuItemsSource": "STATIC",
+      "menuVariant": "TERTIARY",
       "notation": "standard",
       "originalId": "customColumn1",
       "sticky": "",
@@ -727,7 +754,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{GET_PENDING_APPROVALS.data}}",
+  "tableData": "{{PENDING_APPROVALS.data}}",
   "textSize": "0.875rem",
   "topRow": 0,
   "totalRecordsCount": 0,

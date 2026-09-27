@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "/* Formatted on 9/27/2026 10:57:59 AM (QP5 v5.362) */\nDECLARE\n    V_ACTIVITY_ID   RAW (16);\nBEGIN\n    V_ACTIVITY_ID :=\n        HEXTORAW (\n            REPLACE ('{{ tblApproval.selectedRow.ACTIVITY_ID }}', '-', ''));\n    TALY_BO_REP.MMS_APPROVAL_PKG.DECIDE_ACTIVITY (\n        P_ACTIVITY_ID        => V_ACTIVITY_ID,\n        P_USER_ID            => '{{ appsmith.user.email }}',\n        P_DECISION           => '{{ this.params.decision }}',\n        P_REASON_CODE        => NULLIF (TRIM ('{{ this.params.reasonCode }}'), ''),\n        P_DECISION_COMMENT   => NULLIF ('{{ this.params.comment }}', ''));\n    COMMIT;\nEND;"
+          "data": "/* Formatted on 9/27/2026 6:18:45 PM (QP5 v5.362) */\nDECLARE\n    V_ACTIVITY_ID          RAW (16);\n    V_ACTIVITY_REASON_ID   RAW (16);\nBEGIN\n    V_ACTIVITY_ID :='{{ appsmith.store.MMS_SELECTED_APPROVAL_ACTIVITY_ID }}';\n\t\tV_ACTIVITY_REASON_ID :='{{ this.params.activityReasonId }}';\n\n\n    TALY_BO_REP.MMS_APPROVAL_PKG.DECIDE_ACTIVITY (\n        P_ACTIVITY_ID          => V_ACTIVITY_ID,\n        P_USER_ID              => '{{ appsmith.user.email }}',\n        P_DECISION             => '{{ appsmith.store.confirmAction }}',\n        P_ACTIVITY_REASON_ID   => V_ACTIVITY_REASON_ID,\n        P_DECISION_COMMENT     => NULLIF ('{{ this.params.comment }}', ''));\n\n\n    COMMIT;\nEND;"
         },
         "preparedStatement": {
           "data": true

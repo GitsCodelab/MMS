@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6ab8cb5c51f790f8a71599ff_f5f58ab0-c731-495b-84c4-d41829a9f7eb",
-  "id": "ApprovalWorkbench_JS_PAGE.submitDecision",
+  "gitSyncId": "6ab8cb5c51f790f8a71599ff_af52d092-ce9a-490b-8207-864249b52b16",
+  "id": "ApprovalWorkbench_JS_PAGE.confirmedActions",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,8 +22,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "JS_PAGE.submitDecision",
-    "name": "submitDecision",
+    "fullyQualifiedName": "JS_PAGE.confirmedActions",
+    "name": "confirmedActions",
     "pageId": "ApprovalWorkbench",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
