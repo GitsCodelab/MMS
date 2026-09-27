@@ -6,7 +6,7 @@ export default {
 			ACTIVITY_ID: row.ACTIVITY_ID, 
 			REQUEST_ID : row.REQUEST_ID
 		}
-		
+
 	},
 
 	approve: async () => {
@@ -15,7 +15,7 @@ export default {
 			reasonCode: "",
 			comment: ""
 		});
-
+		await PENDING_APPROVALS.run();
 		this.clearDecision();
 	},
 	confirmedActions:async()=>{
