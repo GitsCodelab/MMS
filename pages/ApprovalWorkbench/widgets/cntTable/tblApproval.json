@@ -47,9 +47,10 @@
     "REQUEST_ID",
     "QUEUE_CODE",
     "REQUEST_TYPE_ID",
-    "MERCHANT_ID"
+    "MERCHANT_ID",
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1790507295719,
+  "columnUpdatedAt": 1790507772152,
   "columnWidthMap": {
     "ACTIVITY_STATUS": 157,
     "CIF": 106,
@@ -125,6 +126,9 @@
     },
     {
       "key": "primaryColumns.RM_NAME.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -647,6 +651,70 @@
       "label": "RM_NAME",
       "notation": "standard",
       "originalId": "RM_NAME",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "...",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonLabel": "Approve",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "menuButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "...",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "Actions",
+      "menuColor": "{{tblApproval.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuItems": {
+        "menuItem47442jtlnb": {
+          "id": "menuItem47442jtlnb",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Reject",
+          "widgetId": "0woec324zz"
+        },
+        "menuItemg5bab45okx": {
+          "id": "menuItemg5bab45okx",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Push back",
+          "widgetId": "znpqht6yoq"
+        },
+        "menuItems4tbp2kvc2": {
+          "id": "menuItems4tbp2kvc2",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Approve",
+          "widgetId": "tl57bo40xl"
+        }
+      },
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
