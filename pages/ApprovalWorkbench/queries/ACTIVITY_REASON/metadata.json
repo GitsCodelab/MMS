@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "/* Formatted on 9/27/2026 4:22:58 PM (QP5 v5.362) */\n  SELECT RAWTOHEX (r.ACTIVITY_REASON_ID)     ACTIVITY_REASON_ID,\n         r.ACTIVITY_TYPE,\n         r.REASON_CODE,\n         r.REASON_NAME,\n         r.DESCRIPTION\n    FROM MMS_ACTIVITY_REASON r\n   WHERE r.ACTIVE_FLAG = 1\nORDER BY r.DISPLAY_ORDER"
+          "data": "/* Formatted on 9/27/2026 4:22:58 PM (QP5 v5.362) */\n  SELECT RAWTOHEX (r.ACTIVITY_REASON_ID)     ACTIVITY_REASON_ID,\n         r.ACTIVITY_TYPE,\n         r.REASON_CODE,\n         r.REASON_NAME,\n         r.DESCRIPTION\n    FROM MMS_ACTIVITY_REASON r\n   WHERE r.ACTIVE_FLAG = 1 and r.activity_type = '{{appsmith.store.confirmAction}}'\nORDER BY r.DISPLAY_ORDER"
         },
         "preparedStatement": {
           "data": true
@@ -24,7 +24,11 @@
       "name": "MMS-LOCAL",
       "pluginId": "oracle-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.body.data"
+      }
+    ],
     "name": "ACTIVITY_REASON",
     "pageId": "ApprovalWorkbench",
     "runBehaviour": "ON_PAGE_LOAD",
