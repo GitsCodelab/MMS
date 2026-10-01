@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 353,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -37,7 +37,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "69lmnqc3yd",
+      "parentId": "il5ryykqs1",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,7 +46,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "du05ypbvmt",
+      "widgetId": "8x9qn5c6a0",
       "widgetName": "Canvas17"
     }
   ],
@@ -79,7 +79,7 @@
   "topRow": 13,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "69lmnqc3yd",
+  "widgetId": "il5ryykqs1",
   "widgetName": "mdConfirm",
   "width": 532
 }

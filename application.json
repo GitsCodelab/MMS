@@ -68,6 +68,10 @@
     {
       "id": "ApprovalWorkbench",
       "isDefault": false
+    },
+    {
+      "id": "Register Terminal Workbench",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

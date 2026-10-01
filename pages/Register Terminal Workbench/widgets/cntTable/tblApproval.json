@@ -58,7 +58,6 @@
     "ACTIVITY_STATUS": 157,
     "CIF": 106,
     "CYCLE_NO": 115,
-    "DECISION_COMMENT": 179,
     "MERCHANT_NAME_EN": 228,
     "REQUEST_STATUS": 175,
     "customColumn1": 83
@@ -144,9 +143,6 @@
     },
     {
       "key": "primaryColumns.CREATED_AT.computedValue"
-    },
-    {
-      "key": "primaryColumns.CONTRACT_SERIAL.displayText"
     }
   ],
   "dynamicPropertyPathList": [
@@ -198,7 +194,7 @@
   "originalBottomRow": 78,
   "originalTopRow": 13,
   "parentColumnSpace": 3.484375,
-  "parentId": "yus7rxslxa",
+  "parentId": "9onq5nm100",
   "parentRowSpace": 10,
   "primaryColumns": {
     "ACTIVITY_ID": {
@@ -333,7 +329,6 @@
       "computedValue": "{{(() => { const tableData = tblApproval.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CONTRACT_SERIAL\"])) : CONTRACT_SERIAL })()}}",
       "currencyCode": "USD",
       "decimals": 0,
-      "displayText": "{{(() => { const tableData = tblApproval.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"CONTRACT_SERIAL\"])) : currentRow[\"CONTRACT_SERIAL\"] })()}}",
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
@@ -480,7 +475,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "DECISION COMMENT",
+      "label": "DECISION_COMMENT",
       "notation": "standard",
       "originalId": "DECISION_COMMENT",
       "sticky": "",
@@ -839,7 +834,7 @@
           "isVisible": true,
           "label": "Reject",
           "onClick": "{{storeValue('confirmAction', 'REJECTED');\nJS_PAGE.confirmActionMsg();\n}}",
-          "widgetId": "0woec324zz"
+          "widgetId": "ntnrup7vyn"
         },
         "menuItemg5bab45okx": {
           "iconName": "info-sign",
@@ -849,7 +844,7 @@
           "isVisible": true,
           "label": "Push back",
           "onClick": "{{storeValue('confirmAction', 'PUSHED_BACK');\nJS_PAGE.confirmActionMsg();\n}}",
-          "widgetId": "znpqht6yoq"
+          "widgetId": "k0n8wa665o"
         },
         "menuItems4tbp2kvc2": {
           "iconName": "automatic-updates",
@@ -859,7 +854,7 @@
           "isVisible": true,
           "label": "Approve",
           "onClick": "{{storeValue('confirmAction', 'APPROVED');\n\nJS_PAGE.confirmActionMsg();\n}}",
-          "widgetId": "tl57bo40xl"
+          "widgetId": "6pi3sp6yht"
         }
       },
       "menuItemsSource": "STATIC",
@@ -885,6 +880,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "5u0e0d9tue",
+  "widgetId": "bk7gp6te2t",
   "widgetName": "tblApproval"
 }
