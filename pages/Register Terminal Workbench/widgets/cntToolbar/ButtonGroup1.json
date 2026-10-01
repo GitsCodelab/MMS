@@ -46,7 +46,7 @@
       "itemType": "BUTTON",
       "label": "Refresh",
       "menuItems": {},
-      "onClick": "{{PENDING_APPROVALS.run()}}",
+      "onClick": "{{GET_ID_GENERATION_TERMINALS.run()}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "3hdjb42900"

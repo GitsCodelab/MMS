@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6ab8cb5c51f790f8a71599ff_d4fa8474-a173-4095-b3de-2a2144796893",
-  "id": "Register Terminal Workbench_ACTIVITY_REASON",
+  "gitSyncId": "6ab8cb5c51f790f8a71599ff_7b9d8b01-e33b-4718-998a-91b14ac21f0a",
+  "id": "Register Terminal Workbench_GENERATE_TID",
   "pluginId": "oracle-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "/* Formatted on 9/27/2026 4:22:58 PM (QP5 v5.362) */\n  SELECT RAWTOHEX (r.ACTIVITY_REASON_ID)     ACTIVITY_REASON_ID,\n         r.ACTIVITY_TYPE,\n         r.REASON_CODE,\n         r.REASON_NAME,\n         r.DESCRIPTION\n    FROM MMS_ACTIVITY_REASON r\n   WHERE r.ACTIVE_FLAG = 1 and r.activity_type = '{{appsmith.store.confirmAction}}'\nORDER BY r.DISPLAY_ORDER"
+          "data": "/* Formatted on 10/1/2026 12:23:30 PM (QP5 v5.362) */\nDECLARE\n    V_TERMINAL_ID   RAW (16);\n    V_TID           VARCHAR2 (50);\nBEGIN\n    V_TERMINAL_ID :=\n        HEXTORAW (\n            REPLACE ('{{appsmith.store.MMS_SELECTED_TERMINAL_ID}}', '-', ''));\n    TALY_BO_REP.MMS_TID_GENERATION_PKG.GENERATE_TID (\n        P_TERMINAL_ID   => V_TERMINAL_ID,\n        P_USER_ID       => '{{appsmith.user.email}}',\n        P_TID           => V_TID);\n    COMMIT;\nEND;"
         },
         "preparedStatement": {
           "data": true
@@ -29,9 +29,9 @@
         "key": "formData.body.data"
       }
     ],
-    "name": "ACTIVITY_REASON",
+    "name": "GENERATE_TID",
     "pageId": "Register Terminal Workbench",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
